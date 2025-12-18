@@ -6,8 +6,8 @@ class Program
     {
         // Problem 1
         //Console.WriteLine("Enter num1 & num2: ");
-        int num1 = Convert.ToInt32(Console.ReadLine());
-        int num2 = Convert.ToInt32(Console.ReadLine());
+        //int num1 = Convert.ToInt32(Console.ReadLine());
+        //int num2 = Convert.ToInt32(Console.ReadLine());
 
         //Problem1 p1 = new Problem1();
         //p1.Calculate(num1, num2);
@@ -59,10 +59,25 @@ class Program
 
 
         // Problem 7 
-        Console.WriteLine("Enter num1 & num2: ");
+        //Console.WriteLine("Enter num1 & num2: ");
 
-        Problem7 p7 = new Problem7();
-        p7.Swap(num1, num2);
+        //Problem7 p7 = new Problem7();
+        //p7.Swap(num1, num2);
+
+
+        // Problem 8
+        Console.WriteLine("Enter name, fromCity, viaCity, toCity, fromToVia, viaToFinalCity & timeTaken");
+        string name = Console.ReadLine();
+        string fromCity = Console.ReadLine();
+        string viaCity = Console.ReadLine();
+        string toCity = Console.ReadLine();
+
+        double fromToVia = Convert.ToDouble(Console.ReadLine());
+        double viaToFinalCity = Convert.ToDouble(Console.ReadLine());
+        double timeTaken = Convert.ToDouble(Console.ReadLine());
+
+        Problem8 p8 = new Problem8();
+        p8.DisplayTripResult(name, fromCity, viaCity, toCity, fromToVia, viaToFinalCity, timeTaken);
 
         Console.ReadKey();
     }
