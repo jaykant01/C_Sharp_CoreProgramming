@@ -42,11 +42,20 @@ class Program
 
 
         // Problem 5
-        Console.WriteLine("Enter Temperature: ");
-        double fahre = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter Temperature: ");
+        //double fahre = Convert.ToDouble(Console.ReadLine());
 
-        Problem5 p5 = new Problem5();
-        p5.FahrToCelsius(fahre);
+        //Problem5 p5 = new Problem5();
+        //p5.FahrToCelsius(fahre);
+
+
+        // Problem 6
+        Console.WriteLine("Enter your salary & Bonus: ");
+        int salary = Convert.ToInt32(Console.ReadLine());
+        int bonus = Convert.ToInt32(Console.ReadLine());
+
+        Problem6 p6 = new Problem6();
+        p6.TotalIncome(salary, bonus);
 
         Console.ReadKey();
     }
