@@ -6,8 +6,8 @@ class Program
     {
         // Problem 1
         //Console.WriteLine("Enter num1 & num2: ");
-        //int num1 = Convert.ToInt32(Console.ReadLine());
-        //int num2 = Convert.ToInt32(Console.ReadLine());
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        int num2 = Convert.ToInt32(Console.ReadLine());
 
         //Problem1 p1 = new Problem1();
         //p1.Calculate(num1, num2);
@@ -50,12 +50,19 @@ class Program
 
 
         // Problem 6
-        Console.WriteLine("Enter your salary & Bonus: ");
-        int salary = Convert.ToInt32(Console.ReadLine());
-        int bonus = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter your salary & Bonus: ");
+        //int salary = Convert.ToInt32(Console.ReadLine());
+        //int bonus = Convert.ToInt32(Console.ReadLine());
 
-        Problem6 p6 = new Problem6();
-        p6.TotalIncome(salary, bonus);
+        //Problem6 p6 = new Problem6();
+        //p6.TotalIncome(salary, bonus);
+
+
+        // Problem 7 
+        Console.WriteLine("Enter num1 & num2: ");
+
+        Problem7 p7 = new Problem7();
+        p7.Swap(num1, num2);
 
         Console.ReadKey();
     }
