@@ -81,13 +81,22 @@ class Program
 
 
         // Problem 9
-        Console.WriteLine("Enter side1 , side2 & side3: ");
-        int side1 = Convert.ToInt32(Console.ReadLine());
-        int side2 = Convert.ToInt32(Console.ReadLine());
-        int side3 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter side1 , side2 & side3: ");
+        //int side1 = Convert.ToInt32(Console.ReadLine());
+        //int side2 = Convert.ToInt32(Console.ReadLine());
+        //int side3 = Convert.ToInt32(Console.ReadLine());
 
-        Problem9 p9 = new Problem9();
-        p9.TrinagularPark(side1, side2, side3);
+        //Problem9 p9 = new Problem9();
+        //p9.TrinagularPark(side1, side2, side3);
+
+
+        // Problem 10
+        Console.WriteLine("Enter noOfChocolates & noOfChildren: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+        int m = Convert.ToInt32(Console.ReadLine());
+
+        Problem10 p10 = new Problem10();
+        p10.Chocolates(n, m);
 
         Console.ReadKey();
     }
