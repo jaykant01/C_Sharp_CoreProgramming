@@ -23,13 +23,20 @@ class Program
         //p2.Precedence(a, b, c);
 
         // Problem 3
-        Console.WriteLine("Enter x, y & z");
-        double x = Convert.ToDouble(Console.ReadLine());
-        double y = Convert.ToDouble(Console.ReadLine());
-        double z = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter x, y & z");
+        //double x = Convert.ToDouble(Console.ReadLine());
+        //double y = Convert.ToDouble(Console.ReadLine());
+        //double z = Convert.ToDouble(Console.ReadLine());
 
-        Problem3 p3 = new Problem3();
-        p3.DoubleOpt(x, y, z);
+        //Problem3 p3 = new Problem3();
+        //p3.DoubleOpt(x, y, z);
+
+        // Problem 4
+        Console.WriteLine("Enter Temperature: ");
+        double celsius = Convert.ToDouble(Console.ReadLine());
+
+        Problem4 p4 = new Problem4();
+        p4.CelciusToFahr(celsius);
 
         Console.ReadKey();
     }
