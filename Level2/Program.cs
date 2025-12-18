@@ -91,12 +91,22 @@ class Program
 
 
         // Problem 10
-        Console.WriteLine("Enter noOfChocolates & noOfChildren: ");
-        int n = Convert.ToInt32(Console.ReadLine());
-        int m = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter noOfChocolates & noOfChildren: ");
+        //int n = Convert.ToInt32(Console.ReadLine());
+        //int m = Convert.ToInt32(Console.ReadLine());
 
-        Problem10 p10 = new Problem10();
-        p10.Chocolates(n, m);
+        //Problem10 p10 = new Problem10();
+        //p10.Chocolates(n, m);
+
+
+        //Problem 11
+        Console.WriteLine("Enter the principal, Raate & Interest: ");
+        int principal = Convert.ToInt32(Console.ReadLine());
+        int rate = Convert.ToInt32(Console.ReadLine());
+        int time = Convert.ToInt32(Console.ReadLine());
+
+        Problem11 p11 = new Problem11();
+        p11.SPInterest(principal, rate, time);
 
         Console.ReadKey();
     }
