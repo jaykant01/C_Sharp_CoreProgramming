@@ -66,18 +66,28 @@ class Program
 
 
         // Problem 8
-        Console.WriteLine("Enter name, fromCity, viaCity, toCity, fromToVia, viaToFinalCity & timeTaken");
-        string name = Console.ReadLine();
-        string fromCity = Console.ReadLine();
-        string viaCity = Console.ReadLine();
-        string toCity = Console.ReadLine();
+        //Console.WriteLine("Enter name, fromCity, viaCity, toCity, fromToVia, viaToFinalCity & timeTaken");
+        //string name = Console.ReadLine();
+        //string fromCity = Console.ReadLine();
+        //string viaCity = Console.ReadLine();
+        //string toCity = Console.ReadLine();
 
-        double fromToVia = Convert.ToDouble(Console.ReadLine());
-        double viaToFinalCity = Convert.ToDouble(Console.ReadLine());
-        double timeTaken = Convert.ToDouble(Console.ReadLine());
+        //double fromToVia = Convert.ToDouble(Console.ReadLine());
+        //double viaToFinalCity = Convert.ToDouble(Console.ReadLine());
+        //double timeTaken = Convert.ToDouble(Console.ReadLine());
 
-        Problem8 p8 = new Problem8();
-        p8.DisplayTripResult(name, fromCity, viaCity, toCity, fromToVia, viaToFinalCity, timeTaken);
+        //Problem8 p8 = new Problem8();
+        //p8.DisplayTripResult(name, fromCity, viaCity, toCity, fromToVia, viaToFinalCity, timeTaken);
+
+
+        // Problem 9
+        Console.WriteLine("Enter side1 , side2 & side3: ");
+        int side1 = Convert.ToInt32(Console.ReadLine());
+        int side2 = Convert.ToInt32(Console.ReadLine());
+        int side3 = Convert.ToInt32(Console.ReadLine());
+
+        Problem9 p9 = new Problem9();
+        p9.TrinagularPark(side1, side2, side3);
 
         Console.ReadKey();
     }
