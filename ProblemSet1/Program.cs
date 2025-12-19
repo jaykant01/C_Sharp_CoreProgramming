@@ -107,11 +107,19 @@ class Program
 
 
         // Problem 14
-        Console.WriteLine("Enter the number num: ");
+        //Console.WriteLine("Enter the number num: ");
+        //int num = int.Parse(Console.ReadLine());
+
+        //Problem14 p14 = new Problem14();
+        //p14.Fact(num);
+
+
+        // PRoblem 15
+        Console.WriteLine("Enter the number : ");
         int num = int.Parse(Console.ReadLine());
 
-        Problem14 p14 = new Problem14();
-        p14.Fact(num);
+        Problem15 p15 = new Problem15();
+        p15.Fact(num);
 
         Console.ReadKey();
     }
