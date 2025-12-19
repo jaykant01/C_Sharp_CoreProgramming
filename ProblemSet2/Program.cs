@@ -23,13 +23,20 @@ class Program
 
 
         // Problem 1
-        Console.WriteLine("Enter number to check Prime: ");
-        int num = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter number to check Prime: ");
+        //int num = Convert.ToInt32(Console.ReadLine());
 
-        Problem1 p1 = new Problem1();
-        p1.IsPrime(num);
+        //Problem1 p1 = new Problem1();
+        //p1.IsPrime(num);
 
 
+
+        // Problem 2
+        Console.WriteLine("Enter the number input: ");
+        int inp = int.Parse(Console.ReadLine());
+
+        Problem2 p2 = new Problem2();
+        p2.FizzBuzz(inp);
 
 
 
