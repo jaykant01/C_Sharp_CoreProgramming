@@ -61,16 +61,27 @@ class Program
 
 
         // Problem 5
-        Console.WriteLine("Enter the Age & Height");
-        int age1 = Convert.ToInt32(Console.ReadLine());
-        int age2 = Convert.ToInt32(Console.ReadLine());
-        int age3 = Convert.ToInt32(Console.ReadLine());
-        double ht1 = Convert.ToDouble(Console.ReadLine());
-        double ht2 = Convert.ToDouble(Console.ReadLine());
-        double ht3 = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter the Age & Height");
+        //int age1 = Convert.ToInt32(Console.ReadLine());
+        //int age2 = Convert.ToInt32(Console.ReadLine());
+        //int age3 = Convert.ToInt32(Console.ReadLine());
+        //double ht1 = Convert.ToDouble(Console.ReadLine());
+        //double ht2 = Convert.ToDouble(Console.ReadLine());
+        //double ht3 = Convert.ToDouble(Console.ReadLine());
 
-        Problem5 p5 = new Problem5();
-        p5.AgeHeight(age1, age2,age3, ht1, ht2, ht3);
+        //Problem5 p5 = new Problem5();
+        //p5.AgeHeight(age1, age2,age3, ht1, ht2, ht3);
+
+
+
+        // Problem 6
+        Console.WriteLine("Enter the number ");
+        int number = int.Parse(Console.ReadLine());
+
+        Problem6 p6 = new Problem6();
+        p6.Greater(number);
+
+
 
         Console.ReadKey();
     }
