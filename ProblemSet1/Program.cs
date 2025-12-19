@@ -55,13 +55,20 @@ class Program
 
 
         // Problem 7
-        Console.WriteLine("Enter Month and day");
-        int month = Convert.ToInt16(Console.ReadLine());
-        int day = Convert.ToInt16(Console.ReadLine());
+        //Console.WriteLine("Enter Month and day");
+        //int month = Convert.ToInt16(Console.ReadLine());
+        //int day = Convert.ToInt16(Console.ReadLine());
 
-        Problem7 p7 = new Problem7();
-        p7.Season(month, day);
+        //Problem7 p7 = new Problem7();
+        //p7.Season(month, day);
 
+
+        // Problem 8
+        Console.WriteLine("Enter Count Down Number o: ");
+        int o = Convert.ToInt32(Console.ReadLine());
+
+        Problem8 p8 = new Problem8();
+        p8.CountDown(o);
 
         Console.ReadKey();
     }
