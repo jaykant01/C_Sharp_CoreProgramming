@@ -99,11 +99,19 @@ class Program
         //p12.NatCompare(a);
 
         // Problem 13
-        Console.WriteLine("Enter number a: ");
-        int a = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter number a: ");
+        //int a = Convert.ToInt32(Console.ReadLine());
 
-        Problem13 p13 = new Problem13();
-        p13.NatCompareNew(a);
+        //Problem13 p13 = new Problem13();
+        //p13.NatCompareNew(a);
+
+
+        // Problem 14
+        Console.WriteLine("Enter the number num: ");
+        int num = int.Parse(Console.ReadLine());
+
+        Problem14 p14 = new Problem14();
+        p14.Fact(num);
 
         Console.ReadKey();
     }
