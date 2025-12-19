@@ -92,11 +92,18 @@ class Program
         //p11.TotalNew(value);
 
         // Problem 12
+        //Console.WriteLine("Enter number a: ");
+        //int a = Convert.ToInt32(Console.ReadLine());
+
+        //Problem12 p12 = new Problem12();
+        //p12.NatCompare(a);
+
+        // Problem 13
         Console.WriteLine("Enter number a: ");
         int a = Convert.ToInt32(Console.ReadLine());
 
-        Problem12 p12 = new Problem12();
-        p12.NatCompare(a);
+        Problem13 p13 = new Problem13();
+        p13.NatCompareNew(a);
 
         Console.ReadKey();
     }
