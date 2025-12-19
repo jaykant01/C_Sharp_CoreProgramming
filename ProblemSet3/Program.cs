@@ -13,11 +13,20 @@ class Program
 
 
         // Problem 2
-        Console.WriteLine("Enter the Num: ");
-        int num = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter the Num: ");
+        //int num = Convert.ToInt32(Console.ReadLine());
 
-        Problem2 p2 = new Problem2();
-        p2.Counter(num);
+        //Problem2 p2 = new Problem2();
+        //p2.Counter(num);
+
+
+
+        // Problem 3
+        Console.WriteLine("Enter the n: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        Problem3 p3 = new Problem3();
+        p3.HarshadNum(n);
 
 
 
