@@ -64,11 +64,18 @@ class Program
 
 
         // Problem 8
-        Console.WriteLine("Enter Count Down Number o: ");
-        int o = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter Count Down Number o: ");
+        //int o = Convert.ToInt32(Console.ReadLine());
 
-        Problem8 p8 = new Problem8();
-        p8.CountDown(o);
+        //Problem8 p8 = new Problem8();
+        //p8.CountDown(o);
+
+        // Problem 9
+        Console.WriteLine("Enter counter: ");
+        int p = Convert.ToInt32(Console.ReadLine());
+
+        Problem9 p9 = new Problem9();
+        p9.Counter(p);
 
         Console.ReadKey();
     }
