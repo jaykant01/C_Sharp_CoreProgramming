@@ -23,13 +23,21 @@ class Program
 
 
         // Problem 3
-        Console.WriteLine("Enter number x, y & z: ");
-        int x = Convert.ToInt32(Console.ReadLine());
-        int y = Convert.ToInt32(Console.ReadLine());
-        int z = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter number x, y & z: ");
+        //int x = Convert.ToInt32(Console.ReadLine());
+        //int y = Convert.ToInt32(Console.ReadLine());
+        //int z = Convert.ToInt32(Console.ReadLine());
 
-        Problem3 p3 = new Problem3();
-        p3.Largest(x, y, z);
+        //Problem3 p3 = new Problem3();
+        //p3.Largest(x, y, z);
+
+
+        // Problem 4
+        Console.WriteLine("Enter a number: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        Problem4 p4 = new Problem4();
+        p4.Natural(num);
 
 
 
