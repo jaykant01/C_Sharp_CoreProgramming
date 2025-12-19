@@ -84,13 +84,21 @@ class Program
 
 
         // Problem 7
+        //Console.WriteLine("Enter the number and power: ");
+        //int numb = int.Parse(Console.ReadLine());
+        //int power = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter the number and power: ");
-        int numb = int.Parse(Console.ReadLine());
-        int power = int.Parse(Console.ReadLine());
+        //Problem7 p7 = new Problem7();
+        //p7.Power(numb,  power);
 
-        Problem7 p7 = new Problem7();
-        p7.Power(numb,  power);
+
+
+        // Problem 8
+        Console.WriteLine("Enter the number ");
+        int numbe = int.Parse(Console.ReadLine());
+
+        Problem8 p8 = new Problem8();
+        p8.GreatFactor(numbe);
 
 
         Console.ReadKey();
