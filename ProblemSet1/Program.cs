@@ -33,11 +33,18 @@ class Program
 
 
         // Problem 4
-        Console.WriteLine("Enter a number: ");
-        int num = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter a number: ");
+        //int num = Convert.ToInt32(Console.ReadLine());
 
-        Problem4 p4 = new Problem4();
-        p4.Natural(num);
+        //Problem4 p4 = new Problem4();
+        //p4.Natural(num);
+
+        // Problem 5
+        Console.WriteLine("Enter the age: ");
+        int age = Convert.ToInt16((string)Console.ReadLine());
+
+        Problem5 p5 = new Problem5();
+        p5.Vote(age);
 
 
 
