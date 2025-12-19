@@ -41,13 +41,21 @@ class Program
 
 
         // Problem 3
-        Console.WriteLine("Enter the number input: ");
-        int inpu = int.Parse(Console.ReadLine());
+        //Console.WriteLine("Enter the number input: ");
+        //int inpu = int.Parse(Console.ReadLine());
 
-        Problem3 p3 = new Problem3();
-        p3.Fizz(inpu);
+        //Problem3 p3 = new Problem3();
+        //p3.Fizz(inpu);
 
 
+
+        // Problem 4
+        Console.WriteLine("Enter the Weight & Height");
+        double weight = Convert.ToDouble(Console.ReadLine());
+        double height = Convert.ToDouble(Console.ReadLine());
+
+        Problem4 p4 = new Problem4();
+        p4.BMI(weight, height);
 
         Console.ReadKey();
     }
