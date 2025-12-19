@@ -71,11 +71,18 @@ class Program
         //p8.CountDown(o);
 
         // Problem 9
-        Console.WriteLine("Enter counter: ");
-        int p = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter counter: ");
+        //int p = Convert.ToInt32(Console.ReadLine());
 
-        Problem9 p9 = new Problem9();
-        p9.Counter(p);
+        //Problem9 p9 = new Problem9();
+        //p9.Counter(p);
+
+        // Problem 10
+        Console.WriteLine("Enter the val: ");
+        double val = Convert.ToDouble(Console.ReadLine());
+
+        Problem10 p10 = new Problem10();
+        p10.Total(val);
 
         Console.ReadKey();
     }
