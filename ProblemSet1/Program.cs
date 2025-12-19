@@ -47,11 +47,21 @@ class Program
         //p5.Vote(age);
 
         // Problem 6
-        Console.WriteLine("Enter number m: ");
-        int m = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter number m: ");
+        //int m = Convert.ToInt32(Console.ReadLine());
 
-        Problem6 p6 = new Problem6();
-        p6.CheckNumber(m);
+        //Problem6 p6 = new Problem6();
+        //p6.CheckNumber(m);
+
+
+        // Problem 7
+        Console.WriteLine("Enter Month and day");
+        int month = Convert.ToInt16(Console.ReadLine());
+        int day = Convert.ToInt16(Console.ReadLine());
+
+        Problem7 p7 = new Problem7();
+        p7.Season(month, day);
+
 
         Console.ReadKey();
     }
