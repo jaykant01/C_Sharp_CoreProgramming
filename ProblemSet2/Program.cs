@@ -50,12 +50,27 @@ class Program
 
 
         // Problem 4
-        Console.WriteLine("Enter the Weight & Height");
-        double weight = Convert.ToDouble(Console.ReadLine());
-        double height = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter the Weight & Height");
+        //double weight = Convert.ToDouble(Console.ReadLine());
+        //double height = Convert.ToDouble(Console.ReadLine());
 
-        Problem4 p4 = new Problem4();
-        p4.BMI(weight, height);
+        //Problem4 p4 = new Problem4();
+        //p4.BMI(weight, height);
+
+
+
+
+        // Problem 5
+        Console.WriteLine("Enter the Age & Height");
+        int age1 = Convert.ToInt32(Console.ReadLine());
+        int age2 = Convert.ToInt32(Console.ReadLine());
+        int age3 = Convert.ToInt32(Console.ReadLine());
+        double ht1 = Convert.ToDouble(Console.ReadLine());
+        double ht2 = Convert.ToDouble(Console.ReadLine());
+        double ht3 = Convert.ToDouble(Console.ReadLine());
+
+        Problem5 p5 = new Problem5();
+        p5.AgeHeight(age1, age2,age3, ht1, ht2, ht3);
 
         Console.ReadKey();
     }
