@@ -123,11 +123,21 @@ class Program
 
 
         // Problem 16
-        Console.WriteLine("Enter the number : ");
-        int num = int.Parse(Console.ReadLine());
+        //Console.WriteLine("Enter the number : ");
+        //int num = int.Parse(Console.ReadLine());
 
-        Problem16 p16 = new Problem16();
-        p16.OddEven(num);
+        //Problem16 p16 = new Problem16();
+        //p16.OddEven(num);
+
+
+        // Problem 17
+        Console.WriteLine("Enter Salary and year of service: ");
+        int salary = int.Parse(Console.ReadLine());
+        int bonus = int.Parse(Console.ReadLine());
+
+        Problem17 p17 = new Problem17();
+        p17.Bonus(salary,  bonus);
+
 
         Console.ReadKey();
     }
