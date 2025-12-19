@@ -115,11 +115,19 @@ class Program
 
 
         // PRoblem 15
+        //Console.WriteLine("Enter the number : ");
+        //int num = int.Parse(Console.ReadLine());
+
+        //Problem15 p15 = new Problem15();
+        //p15.Fact(num);
+
+
+        // Problem 16
         Console.WriteLine("Enter the number : ");
         int num = int.Parse(Console.ReadLine());
 
-        Problem15 p15 = new Problem15();
-        p15.Fact(num);
+        Problem16 p16 = new Problem16();
+        p16.OddEven(num);
 
         Console.ReadKey();
     }
