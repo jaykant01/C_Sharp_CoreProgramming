@@ -30,11 +30,25 @@ class Program
 
 
         // Problem 4
-        Console.WriteLine("Enter number no");
-        int no = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter number no");
+        //int no = Convert.ToInt32(Console.ReadLine());
 
-        Problem4 p4 = new Problem4();
-        p4.AbundantNum(no);
+        //Problem4 p4 = new Problem4();
+        //p4.AbundantNum(no);
+
+
+
+        // Problem 5
+        Console.WriteLine("Enter the day, month and year: ");
+        
+        int d = int.Parse(Console.ReadLine());
+        int m = int.Parse(Console.ReadLine());
+        int y = int.Parse(Console.ReadLine());
+
+        Problem5 p5 = new Problem5();
+        int result = p5.DayOfWeek(d, m, y);
+        Console.WriteLine(result);
+
 
 
 
