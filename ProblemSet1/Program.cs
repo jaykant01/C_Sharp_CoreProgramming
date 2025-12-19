@@ -78,11 +78,18 @@ class Program
         //p9.Counter(p);
 
         // Problem 10
-        Console.WriteLine("Enter the val: ");
-        double val = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter the val: ");
+        //double val = Convert.ToDouble(Console.ReadLine());
 
-        Problem10 p10 = new Problem10();
-        p10.Total(val);
+        //Problem10 p10 = new Problem10();
+        //p10.Total(val);
+
+        // Problem 11
+        Console.WriteLine("Enter the value: ");
+        double value = Convert.ToDouble(Console.ReadLine());
+
+        Problem11 p11 = new Problem11();
+        p11.TotalNew(value);
 
         Console.ReadKey();
     }
