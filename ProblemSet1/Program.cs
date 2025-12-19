@@ -85,11 +85,18 @@ class Program
         //p10.Total(val);
 
         // Problem 11
-        Console.WriteLine("Enter the value: ");
-        double value = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter the value: ");
+        //double value = Convert.ToDouble(Console.ReadLine());
 
-        Problem11 p11 = new Problem11();
-        p11.TotalNew(value);
+        //Problem11 p11 = new Problem11();
+        //p11.TotalNew(value);
+
+        // Problem 12
+        Console.WriteLine("Enter number a: ");
+        int a = Convert.ToInt32(Console.ReadLine());
+
+        Problem12 p12 = new Problem12();
+        p12.NatCompare(a);
 
         Console.ReadKey();
     }
