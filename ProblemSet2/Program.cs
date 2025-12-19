@@ -32,11 +32,20 @@ class Program
 
 
         // Problem 2
-        Console.WriteLine("Enter the number input: ");
-        int inp = int.Parse(Console.ReadLine());
+        //Console.WriteLine("Enter the number input: ");
+        //int inp = int.Parse(Console.ReadLine());
 
-        Problem2 p2 = new Problem2();
-        p2.FizzBuzz(inp);
+        //Problem2 p2 = new Problem2();
+        //p2.FizzBuzz(inp);
+
+
+
+        // Problem 3
+        Console.WriteLine("Enter the number input: ");
+        int inpu = int.Parse(Console.ReadLine());
+
+        Problem3 p3 = new Problem3();
+        p3.Fizz(inpu);
 
 
 
