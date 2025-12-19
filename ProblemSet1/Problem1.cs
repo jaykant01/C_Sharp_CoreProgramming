@@ -1,8 +1,6 @@
-﻿//using System;
+﻿namespace ProblemSet1;
 
-namespace ProblemSet1;
-
-    public class Class1
+    public class Problem1
     {
         public void CheckDivisible(int number)
         {
