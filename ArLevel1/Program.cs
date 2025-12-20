@@ -21,9 +21,18 @@ class Program
 
 
         // Problem 3
-        Console.WriteLine("Enter Table to Print & Enter range: ");
-        Problem3 p3 = new Problem3();
-        p3.Table();
+        //Console.WriteLine("Enter Table to Print & Enter range: ");
+        //Problem3 p3 = new Problem3();
+        //p3.Table();
+
+
+
+        // Problem 4
+        Console.WriteLine("Enter the array elem: ");
+        Problem4 p4 = new Problem4();
+        p4.Stop();
+
+
         
 
 
