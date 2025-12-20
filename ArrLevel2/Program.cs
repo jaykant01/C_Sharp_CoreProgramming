@@ -4,6 +4,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        // Problem BonusOfEmployee
+        BonusOfEmployee be = new BonusOfEmployee();
+        be.Bonus();
+
+        Console.ReadKey();
+
     }
 }
