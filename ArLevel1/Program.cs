@@ -42,9 +42,16 @@ class Program
 
 
         // Problem 6
-        Console.WriteLine("Enter the height of players in array: ");
-        Problem6 p6 = new Problem6();
-        p6.Footbal();
+        //Console.WriteLine("Enter the height of players in array: ");
+        //Problem6 p6 = new Problem6();
+        //p6.Footbal();
+
+
+
+        // Problem 7
+        Console.WriteLine("Enter the number range");
+        Problem7 p7 = new Problem7();
+        p7.EvenOdd();
 
 
 
