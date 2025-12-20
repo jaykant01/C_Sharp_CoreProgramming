@@ -14,9 +14,21 @@ class Program
 
 
         // Problem 2
-        Console.WriteLine("Enter size of array and arrays");
-        Problem2 p2 = new Problem2();
-        p2.Compare();
+        //Console.WriteLine("Enter size of array and arrays");
+        //Problem2 p2 = new Problem2();
+        //p2.Compare();
+
+
+
+        // Problem 3
+        Console.WriteLine("Enter Table to Print & Enter range: ");
+        Problem3 p3 = new Problem3();
+        p3.Table();
+        
+
+
+
+
 
         Console.ReadKey();
     }
