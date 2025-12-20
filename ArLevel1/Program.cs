@@ -35,9 +35,16 @@ class Program
 
 
         // Problem 5
-        Console.WriteLine("Enter Table no to print: ");
-        Problem5 p5 = new Problem5();
-        p5.Multiple();
+        //Console.WriteLine("Enter Table no to print: ");
+        //Problem5 p5 = new Problem5();
+        //p5.Multiple();
+
+
+
+        // Problem 6
+        Console.WriteLine("Enter the height of players in array: ");
+        Problem6 p6 = new Problem6();
+        p6.Footbal();
 
 
 
