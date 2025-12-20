@@ -28,12 +28,19 @@ class Program
 
 
         // Problem 4
-        Console.WriteLine("Enter the array elem: ");
-        Problem4 p4 = new Problem4();
-        p4.Stop();
+        //Console.WriteLine("Enter the array elem: ");
+        //Problem4 p4 = new Problem4();
+        //p4.Stop();
 
 
-        
+
+        // Problem 5
+        Console.WriteLine("Enter Table no to print: ");
+        Problem5 p5 = new Problem5();
+        p5.Multiple();
+
+
+
 
 
 
