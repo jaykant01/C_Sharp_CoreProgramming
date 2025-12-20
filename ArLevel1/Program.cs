@@ -49,9 +49,16 @@ class Program
 
 
         // Problem 7
-        Console.WriteLine("Enter the number range");
-        Problem7 p7 = new Problem7();
-        p7.EvenOdd();
+        //Console.WriteLine("Enter the number ");
+        //Problem7 p7 = new Problem7();
+        //p7.EvenOdd();
+
+
+
+        // Problem 8
+        Console.WriteLine("Enter the number: ");
+        Problem8 p8 = new Problem8();
+        p8.Factors();
 
 
 
