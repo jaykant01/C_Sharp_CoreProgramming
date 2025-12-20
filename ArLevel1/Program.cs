@@ -56,14 +56,17 @@ class Program
 
 
         // Problem 8
-        Console.WriteLine("Enter the number: ");
-        Problem8 p8 = new Problem8();
-        p8.Factors();
+        //Console.WriteLine("Enter the number: ");
+        //Problem8 p8 = new Problem8();
+        //p8.Factors();
 
 
 
 
-
+        // Problem 9
+        Console.WriteLine("Enter the  number: ");
+        Problem9 p9 = new Problem9();
+        p9.TwoDArray();
 
 
 
