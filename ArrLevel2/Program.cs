@@ -32,9 +32,16 @@ class Program
 
 
         // Problem 5 Reverse number
-        Console.WriteLine("Enter size and array number: ");
-        ReverseNum rev = new ReverseNum();
-        rev.Reverse();
+        //Console.WriteLine("Enter size and array number: ");
+        //ReverseNum rev = new ReverseNum();
+        //rev.Reverse();
+
+
+
+        // Problem 6 BMI Calculator
+        Console.WriteLine("Enter BMI : ");
+        BMIOfPersons bi = new BMIOfPersons();
+        bi.BmiCalc();
 
 
 
