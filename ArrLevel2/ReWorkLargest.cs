@@ -18,12 +18,12 @@ public class ReWorkLargest
 
         int i = 0;
 
-        // -------- Input loop --------
+       
         while (i < maxDigit)
         {
             arr[i] = Convert.ToInt32(Console.ReadLine());
 
-            // increase size ONLY ONCE
+            
             if (i == maxDigit - 1)
             {
                 maxDigit += 10;
@@ -35,15 +35,15 @@ public class ReWorkLargest
                 }
 
                 arr = temp;
-                break;   // 🔑 IMPORTANT: stop after adding 10 more
+                break;
             }
 
             i++;
         }
 
-        int count = i + 1; // actual elements entered
+        int count = i + 1; 
 
-        // -------- Find largest & second largest --------
+        
         for (int k = 0; k < count; k++)
         {
             if (arr[k] > largest)

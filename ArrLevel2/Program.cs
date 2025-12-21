@@ -4,30 +4,37 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Problem BonusOfEmployee
+        // Problem 1 BonusOfEmployee
         //BonusOfEmployee be = new BonusOfEmployee();
         //be.Bonus();
 
 
 
-        // Problem ThreeFriends
+        // Problem 2 ThreeFriends
         //Console.WriteLine("Enter the details: ");
         //ThreeFriends th = new ThreeFriends();
         //th.Friends();
 
 
 
-        // Problem Largest And Second Largest
+        // Problem 3 Largest And Second Largest
         //Console.WriteLine("Enter the size and Array: ");
         //LargestAndSecondLargest ls = new LargestAndSecondLargest();
         //ls.Largest();
 
 
 
-        // Problem 
-        Console.WriteLine("Enter the size and Array: ");
-        ReWorkLargest re = new ReWorkLargest();
-        re.ReWork();
+        // Problem 4 ReWork
+        //Console.WriteLine("Enter the size and Array: ");
+        //ReWorkLargest re = new ReWorkLargest();
+        //re.ReWork();
+
+
+
+        // Problem 5 Reverse number
+        Console.WriteLine("Enter size and array number: ");
+        ReverseNum rev = new ReverseNum();
+        rev.Reverse();
 
 
 
