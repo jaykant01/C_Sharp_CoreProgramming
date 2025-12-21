@@ -18,14 +18,16 @@ class Program
 
 
         // Problem Largest And Second Largest
-        Console.WriteLine("Enter the size and Array: ");
-        LargestAndSecondLargest ls = new LargestAndSecondLargest();
-        ls.Largest();
+        //Console.WriteLine("Enter the size and Array: ");
+        //LargestAndSecondLargest ls = new LargestAndSecondLargest();
+        //ls.Largest();
 
 
 
         // Problem 
-
+        Console.WriteLine("Enter the size and Array: ");
+        ReWorkLargest re = new ReWorkLargest();
+        re.ReWork();
 
 
 
