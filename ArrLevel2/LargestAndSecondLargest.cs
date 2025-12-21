@@ -8,7 +8,7 @@ public class LargestAndSecondLargest
         int[] arr = new int[n];
 
         int largest = int.MinValue;
-        int secondLargest = int.MinValue;
+        int secondLargest = largest;
 
         // Scan Array
         for (int i=0; i<n; i++)
@@ -21,8 +21,10 @@ public class LargestAndSecondLargest
         {
             if (largest < arr[i])
             {
+                secondLargest = largest;
                 largest = arr[i];
-            }else if (secondLargest < arr[i] && secondLargest < largest)
+
+            }else if (secondLargest < largest && secondLargest > arr[i] )
             {
                 secondLargest = arr[i];
             }
