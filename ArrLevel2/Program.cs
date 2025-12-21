@@ -39,9 +39,16 @@ class Program
 
 
         // Problem 6 BMI Calculator
-        Console.WriteLine("Enter BMI : ");
-        BMIOfPersons bi = new BMIOfPersons();
-        bi.BmiCalc();
+        //Console.WriteLine("Enter BMI : ");
+        //BMIOfPersons bi = new BMIOfPersons();
+        //bi.BmiCalc();
+
+
+
+        // Problem 8 Marks 
+        Console.WriteLine("Enter Marks: ");
+        MarksOFStudents mk = new MarksOFStudents();
+        mk.Marks();
 
 
 
