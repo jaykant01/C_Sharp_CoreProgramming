@@ -38,25 +38,41 @@ class Program
 
 
         // Problem 5 Check number
-        Console.WriteLine("Enter an integer number:");
-        int num = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter an integer number:");
+        //int num = Convert.ToInt32(Console.ReadLine());
 
-        CheckNumber obj = new CheckNumber();
-        int result = obj.CheckSign(num);
+        //CheckNumber obj = new CheckNumber();
+        //int result = obj.CheckSign(num);
 
-        if (result == 1)
-        {
-            Console.WriteLine("The number is Positive");
-        }   
-        else if (result == -1)
-        {
-            Console.WriteLine("The number is Negative");
-        }
+        //if (result == 1)
+        //{
+        //    Console.WriteLine("The number is Positive");
+        //}   
+        //else if (result == -1)
+        //{
+        //    Console.WriteLine("The number is Negative");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("The number is Zero");
+        //}
+
+
+
+
+
+        // Problem 6 Spring Season
+        int month = Convert.ToInt32(Console.ReadLine());
+        int day = Convert.ToInt32(Console.ReadLine());
+
+        SpringSeason obj = new SpringSeason();
+        bool result = obj.IsSpringSeason(month, day);
+
+        if (result)
+            Console.WriteLine("Its a Spring Season");
         else
-        {
-            Console.WriteLine("The number is Zero");
-        }
-            
+            Console.WriteLine("Not a Spring Season");
+
 
         Console.ReadKey();
     }
