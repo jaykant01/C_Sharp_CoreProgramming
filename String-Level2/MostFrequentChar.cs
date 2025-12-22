@@ -25,7 +25,6 @@ public class MostFrequentChar
                 maxCh = s[i];
             }
         }
-        Console.WriteLine(count);
         Console.WriteLine("Most Frequent Character: '" + maxCh + "'");
 
     }

@@ -50,8 +50,13 @@ class Program
 
 
         // Problem 9 Most Frequent Character
-        MostFrequentChar fq = new MostFrequentChar();
-        fq.Freq();
+        //MostFrequentChar fq = new MostFrequentChar();
+        //fq.Freq();
+
+
+        // Problem 10 10. Remove a Specific Character
+        RemoveCharacter rm = new RemoveCharacter();
+        rm.Remove();
 
         Console.ReadKey();
     }
