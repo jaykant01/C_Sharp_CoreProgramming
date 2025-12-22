@@ -30,9 +30,16 @@ class Program
 
 
         // Problem 3
-        Console.WriteLine("Enter String Input: ");
-        AllCharacters al = new AllCharacters();
-        al.Characters();
+        //Console.WriteLine("Enter String Input: ");
+        //AllCharacters al = new AllCharacters();
+        //al.Characters();
+
+
+
+        // Problem 4 Null Reference Exception
+        Console.WriteLine("Null Reference: ");
+        NullReferenceExcep ep = new NullReferenceExcep();
+        ep.Null();
 
         Console.ReadKey();
     }
