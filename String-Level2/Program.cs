@@ -54,9 +54,14 @@ class Program
         //fq.Freq();
 
 
-        // Problem 10 10. Remove a Specific Character
-        RemoveCharacter rm = new RemoveCharacter();
-        rm.Remove();
+        // Problem 10 Remove a Specific Character
+        //RemoveCharacter rm = new RemoveCharacter();
+        //rm.Remove();
+
+
+        // Problem 11 Anagram Check
+        Anagrams ag = new Anagrams();
+        ag.AnagramCheck();
 
         Console.ReadKey();
     }
