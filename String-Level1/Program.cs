@@ -22,10 +22,17 @@ class Program
 
 
         // Problem 2 Sub String
-        Console.WriteLine("Enter string input");
-        
-        SubString sa = new SubString();
-        sa.CompareUsingCharAt();
+        //Console.WriteLine("Enter string input");
+
+        //SubString sa = new SubString();
+        //sa.CompareUsingCharAt();
+
+
+
+        // Problem 3
+        Console.WriteLine("Enter String Input: ");
+        AllCharacters al = new AllCharacters();
+        al.Characters();
 
         Console.ReadKey();
     }
