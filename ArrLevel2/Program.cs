@@ -46,9 +46,16 @@ class Program
 
 
         // Problem 8 Marks 
-        Console.WriteLine("Enter Marks: ");
-        MarksOFStudents mk = new MarksOFStudents();
-        mk.Marks();
+        //Console.WriteLine("Enter Marks: ");
+        //MarksOFStudents mk = new MarksOFStudents();
+        //mk.Marks();
+
+
+
+        // Problem 10 Frequency
+        Console.WriteLine("Enter digits: ");
+        FrequencyCount fq = new FrequencyCount();
+        fq.Freq();
 
 
 
