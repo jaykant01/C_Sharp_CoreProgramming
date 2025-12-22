@@ -76,14 +76,26 @@ class Program
 
 
         // Problem 7 Natural number sum
-        Console.WriteLine("Enter a number:");
-        int n = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter a number:");
+        //int n = Convert.ToInt32(Console.ReadLine());
 
-        NaturalSum obj = new NaturalSum();
-        int result = obj.CalculateSum(n);
+        //NaturalSum obj = new NaturalSum();
+        //int result = obj.CalculateSum(n);
 
-        Console.WriteLine("Sum of first " + n + " natural numbers is " + result);
+        //Console.WriteLine("Sum of first " + n + " natural numbers is " + result);
 
+
+
+        // Problem 8 Find Smallest And Largest
+        Console.WriteLine("Enter first, second & Third Number: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        int num2 = Convert.ToInt32(Console.ReadLine());
+        int num3 = Convert.ToInt32(Console.ReadLine());
+
+
+        int[] result = FindSmallestLargest.FindSmallestAndLargest(num1, num2, num3);
+        Console.WriteLine("Smallest number: " + result[0]);
+        Console.WriteLine("Largest number: " + result[1]);
 
         Console.ReadKey();
     }
