@@ -76,9 +76,15 @@ class Program
 
 
         // Problem 10 Lower Case
-        Console.WriteLine("Enter the string in Upper: ");
-        LowerCaseConv lw = new LowerCaseConv();
-        lw.Lower();
+        //Console.WriteLine("Enter the string in Upper: ");
+        //LowerCaseConv lw = new LowerCaseConv();
+        //lw.Lower();
+
+
+
+        // Problem 11 Split And Word Length
+        SplitLength sp = new SplitLength();
+        sp.SplitText();
 
 
         Console.ReadKey();
