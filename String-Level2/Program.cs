@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        // Problem 1 Count Vowels and Consonants
+        VowelsAndConsonants vc = new VowelsAndConsonants();
+        vc.CountVowCon();
+
+        Console.ReadKey();
     }
 }
