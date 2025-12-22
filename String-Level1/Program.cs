@@ -37,9 +37,16 @@ class Program
 
 
         // Problem 4 Null Reference Exception
-        Console.WriteLine("Null Reference: ");
-        NullReferenceExcep ep = new NullReferenceExcep();
-        ep.Null();
+        //Console.WriteLine("Null Reference: ");
+        //NullReferenceExcep ep = new NullReferenceExcep();
+        //ep.Null();
+
+
+
+        // Problem 4 Index Out Of Range Exception
+        Console.WriteLine("Index Out of Range");
+        IndexOutOfBoundExcep ix = new IndexOutOfBoundExcep();
+        ix.Range();
 
         Console.ReadKey();
     }
