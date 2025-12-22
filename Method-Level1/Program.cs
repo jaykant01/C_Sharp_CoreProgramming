@@ -26,15 +26,37 @@ class Program
 
 
         // Problem 4 Athlete runs
-        Console.WriteLine("Enter side 1, side 2, side 3 (in meters):");
-        double side1 = Convert.ToDouble(Console.ReadLine());
-        double side2 = Convert.ToDouble(Console.ReadLine());
-        double side3 = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter side 1, side 2, side 3 (in meters):");
+        //double side1 = Convert.ToDouble(Console.ReadLine());
+        //double side2 = Convert.ToDouble(Console.ReadLine());
+        //double side3 = Convert.ToDouble(Console.ReadLine());
 
-        AthleteRun obj = new AthleteRun();
-        double result = obj.CalculateRounds(side1, side2, side3);
+        //AthleteRun obj = new AthleteRun();
+        //double result = obj.CalculateRounds(side1, side2, side3);
 
-        Console.WriteLine("Number of rounds to complete 5 km run = " + result);
+        //Console.WriteLine("Number of rounds to complete 5 km run = " + result);
+
+
+        // Problem 5 Check number
+        Console.WriteLine("Enter an integer number:");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        CheckNumber obj = new CheckNumber();
+        int result = obj.CheckSign(num);
+
+        if (result == 1)
+        {
+            Console.WriteLine("The number is Positive");
+        }   
+        else if (result == -1)
+        {
+            Console.WriteLine("The number is Negative");
+        }
+        else
+        {
+            Console.WriteLine("The number is Zero");
+        }
+            
 
         Console.ReadKey();
     }
