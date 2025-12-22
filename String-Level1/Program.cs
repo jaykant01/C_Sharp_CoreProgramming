@@ -68,9 +68,17 @@ class Program
 
 
         // Problem 9 Upper Case
-        Console.WriteLine("Enter the string in small: ");
-        UpperCaseConv up = new UpperCaseConv();
-        up.Upper();
+        //Console.WriteLine("Enter the string in small: ");
+        //UpperCaseConv up = new UpperCaseConv();
+        //up.Upper();
+
+
+
+
+        // Problem 10 Lower Case
+        Console.WriteLine("Enter the string in Upper: ");
+        LowerCaseConv lw = new LowerCaseConv();
+        lw.Lower();
 
 
         Console.ReadKey();
