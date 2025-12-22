@@ -60,8 +60,14 @@ class Program
 
 
         // Problem 11 Anagram Check
-        Anagrams ag = new Anagrams();
-        ag.AnagramCheck();
+        //Anagrams ag = new Anagrams();
+        //ag.AnagramCheck();
+
+
+
+        // Problem 12 Replace Method
+        ReplaceMethod rp = new ReplaceMethod();
+        rp.Replace();
 
         Console.ReadKey();
     }
