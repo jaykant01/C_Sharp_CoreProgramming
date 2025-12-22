@@ -21,8 +21,17 @@ class Program
 
 
         // Problem 4 Duplicate Remove
-        RemoveDuplicate dp = new RemoveDuplicate();
-        dp.Duplicate();
+        //RemoveDuplicate dp = new RemoveDuplicate();
+        //dp.Duplicate();
+
+
+
+        // problem 5 Longest Word in a Sentence
+        LongestWord lg = new LongestWord();
+        lg.Longest();
+
+
+
         Console.ReadKey();
     }
 }
