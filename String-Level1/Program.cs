@@ -43,22 +43,27 @@ class Program
 
 
 
-        // Problem 4 Index Out Of Range Exception
+        // Problem 5 Index Out Of Range Exception
         //Console.WriteLine("Index Out of Range");
         //IndexOutOfBoundExcep ix = new IndexOutOfBoundExcep();
         //ix.Range();
 
 
 
-        // Problem 5 Argument Out of Range Exception
+        // Problem 6 Argument Out of Range Exception
         //Console.WriteLine("Argument Out of range");
         //ArgumentOutOfRangeExcep ep = new ArgumentOutOfRangeExcep();
         //ep.SubSt();
 
 
-        // Problem Format Exception
-        FormatExcep fp = new FormatExcep();
-        fp.Format();
+        // Problem 7 Format Exception
+        //FormatExcep fp = new FormatExcep();
+        //fp.Format();
+
+
+        // Problem 8 IndexOutOfRange Exception
+        IndexOutOfRange of = new IndexOutOfRange();
+        of.Out();
 
         Console.ReadKey();
     }
