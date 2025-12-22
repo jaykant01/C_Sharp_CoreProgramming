@@ -62,16 +62,27 @@ class Program
 
 
         // Problem 6 Spring Season
-        int month = Convert.ToInt32(Console.ReadLine());
-        int day = Convert.ToInt32(Console.ReadLine());
+        //int month = Convert.ToInt32(Console.ReadLine());
+        //int day = Convert.ToInt32(Console.ReadLine());
 
-        SpringSeason obj = new SpringSeason();
-        bool result = obj.IsSpringSeason(month, day);
+        //SpringSeason obj = new SpringSeason();
+        //bool result = obj.IsSpringSeason(month, day);
 
-        if (result)
-            Console.WriteLine("Its a Spring Season");
-        else
-            Console.WriteLine("Not a Spring Season");
+        //if (result)
+        //    Console.WriteLine("Its a Spring Season");
+        //else
+        //    Console.WriteLine("Not a Spring Season");
+
+
+
+        // Problem 7 Natural number sum
+        Console.WriteLine("Enter a number:");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        NaturalSum obj = new NaturalSum();
+        int result = obj.CalculateSum(n);
+
+        Console.WriteLine("Sum of first " + n + " natural numbers is " + result);
 
 
         Console.ReadKey();
