@@ -44,8 +44,14 @@ class Program
 
 
         // Problem 8 Compare Two Strings
-        CompareTwoStrings cp = new CompareTwoStrings();
-        cp.Compare();
+        //CompareTwoStrings cp = new CompareTwoStrings();
+        //cp.Compare();
+
+
+
+        // Problem 9 Most Frequent Character
+        MostFrequentChar fq = new MostFrequentChar();
+        fq.Freq();
 
         Console.ReadKey();
     }
