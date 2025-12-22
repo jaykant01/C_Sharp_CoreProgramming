@@ -10,8 +10,13 @@ class Program
 
 
         // Problem 2 Reverse a String
-        ReverseString rv = new ReverseString();
-        rv.Reverse();
+        //ReverseString rv = new ReverseString();
+        //rv.Reverse();
+
+
+        // Problem 3 Palindrome String Check
+        PalindromeString pd = new PalindromeString();
+        pd.Palindrome();
 
         Console.ReadKey();
     }
