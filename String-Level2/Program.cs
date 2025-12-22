@@ -27,8 +27,14 @@ class Program
 
 
         // problem 5 Longest Word in a Sentence
-        LongestWord lg = new LongestWord();
-        lg.Longest();
+        //LongestWord lg = new LongestWord();
+        //lg.Longest();
+
+
+
+        // Problem 6 Substring Occurences
+        SubstringOccu sb = new SubstringOccu();
+        sb.SubString();
 
 
 
