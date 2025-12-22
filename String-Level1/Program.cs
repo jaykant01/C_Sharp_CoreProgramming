@@ -51,9 +51,14 @@ class Program
 
 
         // Problem 5 Argument Out of Range Exception
-        Console.WriteLine("Argument Out of range");
-        ArgumentOutOfRangeExcep ep = new ArgumentOutOfRangeExcep();
-        ep.SubSt();
+        //Console.WriteLine("Argument Out of range");
+        //ArgumentOutOfRangeExcep ep = new ArgumentOutOfRangeExcep();
+        //ep.SubSt();
+
+
+        // Problem Format Exception
+        FormatExcep fp = new FormatExcep();
+        fp.Format();
 
         Console.ReadKey();
     }
