@@ -15,9 +15,14 @@ class Program
 
 
         // Problem 3 Palindrome String Check
-        PalindromeString pd = new PalindromeString();
-        pd.Palindrome();
+        //PalindromeString pd = new PalindromeString();
+        //pd.Palindrome();
 
+
+
+        // Problem 4 Duplicate Remove
+        RemoveDuplicate dp = new RemoveDuplicate();
+        dp.Duplicate();
         Console.ReadKey();
     }
 }
