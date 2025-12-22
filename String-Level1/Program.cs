@@ -62,8 +62,16 @@ class Program
 
 
         // Problem 8 IndexOutOfRange Exception
-        IndexOutOfRange of = new IndexOutOfRange();
-        of.Out();
+        //IndexOutOfRange of = new IndexOutOfRange();
+        //of.Out();
+
+
+
+        // Problem 9 Upper Case
+        Console.WriteLine("Enter the string in small: ");
+        UpperCaseConv up = new UpperCaseConv();
+        up.Upper();
+
 
         Console.ReadKey();
     }
