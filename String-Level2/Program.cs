@@ -33,10 +33,19 @@ class Program
 
 
         // Problem 6 Substring Occurences
-        SubstringOccu sb = new SubstringOccu();
-        sb.SubString();
+        //SubstringOccu sb = new SubstringOccu();
+        //sb.SubString();
 
 
+        // Problem 7 Toggle Case
+        //ToggleCase tg = new ToggleCase();
+        //tg.Toggle();
+
+
+
+        // Problem 8 Compare Two Strings
+        CompareTwoStrings cp = new CompareTwoStrings();
+        cp.Compare();
 
         Console.ReadKey();
     }
