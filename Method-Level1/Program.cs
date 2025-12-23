@@ -115,19 +115,32 @@ class Program
 
 
         //Problem 10 Chocolates Distribution
-        Console.WriteLine("Enter number of chocolates and children:");
-        int numberOfChocolates = Convert.ToInt32(Console.ReadLine());
-        int numberOfChildren = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter number of chocolates and children:");
+        //int numberOfChocolates = Convert.ToInt32(Console.ReadLine());
+        //int numberOfChildren = Convert.ToInt32(Console.ReadLine());
 
-        Chocolates ck = new Chocolates();
+        //Chocolates ck = new Chocolates();
 
-        int[] result = ck.FindRemainderAndQuotient(
-            numberOfChocolates, numberOfChildren);
+        //int[] result = ck.FindRemainderAndQuotient(
+        //    numberOfChocolates, numberOfChildren);
 
-        Console.WriteLine(
-            $"Each child gets {result[0]} chocolates and remaining chocolates are {result[1]}"
-        );
+        //Console.WriteLine(
+        //    $"Each child gets {result[0]} chocolates and remaining chocolates are {result[1]}"
+        //);
 
+
+
+
+
+        //Problem 11 Wind Chill Temperature
+        Console.WriteLine("Enter temperature and speed:");
+        double temperature = Convert.ToDouble(Console.ReadLine());
+        double windSpeed = Convert.ToDouble(Console.ReadLine());
+
+        WindChillTemprature wd = new WindChillTemprature();
+        double result = wd.CalculateWindChill(temperature, windSpeed);
+
+        Console.WriteLine($"The wind chill temperature is {result}");
 
 
 
