@@ -127,27 +127,54 @@ class Program
 
 
         // Problem 7 StudentVoteChecker
-        int[] studentAges = new int[10];
-        StudentVoteChecker checker = new StudentVoteChecker();
+        //int[] studentAges = new int[10];
+        //StudentVoteChecker checker = new StudentVoteChecker();
 
-        for (int i = 0; i < studentAges.Length; i++)
+        //for (int i = 0; i < studentAges.Length; i++)
+        //{
+        //    Console.Write($"Enter age of student {i + 1}: ");
+        //    studentAges[i] = Convert.ToInt32(Console.ReadLine());
+
+        //    bool canVote = checker.CanStudentVote(studentAges[i]);
+
+        //    if (canVote)
+        //    {
+        //        Console.WriteLine("Student can vote");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Student cannot vote");
+        //    }
+        //}
+
+
+
+
+        // Problem 8 Friend Analyzer
+        string[] friends = { "Amar", "Akbar", "Anthony" };
+
+        int[] ages = new int[3];
+        double[] heights = new double[3];
+
+        // Taking input
+        for (int i = 0; i < friends.Length; i++)
         {
-            Console.Write($"Enter age of student {i + 1}: ");
-            studentAges[i] = Convert.ToInt32(Console.ReadLine());
+            Console.Write($"Enter age of {friends[i]}: ");
+            ages[i] = Convert.ToInt32(Console.ReadLine());
 
-            bool canVote = checker.CanStudentVote(studentAges[i]);
-
-            if (canVote)
-            {
-                Console.WriteLine("Student can vote");
-            }
-            else
-            {
-                Console.WriteLine("Student cannot vote");
-            }
-
+            Console.Write($"Enter height of {friends[i]} (in cm): ");
+            heights[i] = Convert.ToDouble(Console.ReadLine());
         }
 
-            Console.ReadKey();
+        FriendAnalyzer analyzer = new FriendAnalyzer();
+
+        int youngestIndex = analyzer.FindYoungestIndex(ages);
+        int tallestIndex = analyzer.FindTallestIndex(heights);
+
+        // Display results
+        Console.WriteLine($"\nYoungest Friend: {friends[youngestIndex]}");
+        Console.WriteLine($"Tallest Friend: {friends[tallestIndex]}");
+
+        Console.ReadKey();
     }
 }
