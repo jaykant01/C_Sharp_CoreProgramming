@@ -28,18 +28,35 @@ class Program
 
 
         // Problem 2 Natural number using Recursion
-        Console.WriteLine("Enter number n: ");
-        int n = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter number n: ");
+        //int n = Convert.ToInt32(Console.ReadLine());
 
-        NaturalNoRecursive nat = new NaturalNoRecursive();
-        int res1 = nat.Formula(n);
-        int res2 = nat.Recursion(n);
-        Console.WriteLine("Natural no From Formula " +  res1);
-        Console.WriteLine("Natural no From Recursion " +  res1);
+        //NaturalNoRecursive nat = new NaturalNoRecursive();
+        //int res1 = nat.Formula(n);
+        //int res2 = nat.Recursion(n);
+        //Console.WriteLine("Natural no From Formula " +  res1);
+        //Console.WriteLine("Natural no From Recursion " +  res1);
 
-        if(res1 == res2)
+        //if(res1 == res2)
+        //{
+        //    Console.WriteLine("Both are Equal");
+        //}
+
+
+        // Problem 3 Leap Year
+        Console.WriteLine("Enter the year:");
+        int year = Convert.ToInt32(Console.ReadLine());
+
+        LeapYear lp = new LeapYear();
+        bool res = lp.CheckLeapYear(year);
+
+        if (res)
         {
-            Console.WriteLine("Both are Equal");
+            Console.WriteLine("It is a Leap year");
+        }
+        else
+        {
+            Console.WriteLine("Not a Leap Year");
         }
 
         Console.ReadKey();
