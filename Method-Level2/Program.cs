@@ -44,20 +44,37 @@ class Program
 
 
         // Problem 3 Leap Year
-        Console.WriteLine("Enter the year:");
-        int year = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter the year:");
+        //int year = Convert.ToInt32(Console.ReadLine());
 
-        LeapYear lp = new LeapYear();
-        bool res = lp.CheckLeapYear(year);
+        //LeapYear lp = new LeapYear();
+        //bool res = lp.CheckLeapYear(year);
 
-        if (res)
-        {
-            Console.WriteLine("It is a Leap year");
-        }
-        else
-        {
-            Console.WriteLine("Not a Leap Year");
-        }
+        //if (res)
+        //{
+        //    Console.WriteLine("It is a Leap year");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Not a Leap Year");
+        //}
+
+
+        // Problem 4 Unit Convertor
+        Console.WriteLine("Enter the km, miles, meter, feet");
+        double km = Convert.ToDouble(Console.ReadLine());
+        double miles = Convert.ToDouble(Console.ReadLine());
+        double meters = Convert.ToDouble(Console.ReadLine());
+        double feet = Convert.ToDouble(Console.ReadLine());
+
+        double res1 = UnitConvertor.KmToMiles(km);
+        double res2 = UnitConvertor.MilesTokm(miles);
+        double res3 = UnitConvertor.MetersToFeet(meters);
+        double res4 = UnitConvertor.FeetTometers(feet);
+        Console.WriteLine("Convert KmToMiles " + res1);
+        Console.WriteLine("Convert MilesTokm " + res2);
+        Console.WriteLine("Convert MetersToFeet " + res3);
+        Console.WriteLine("Convert FeetTometers " + res4);
 
         Console.ReadKey();
     }
