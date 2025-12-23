@@ -71,6 +71,7 @@ class Program
         //double res2 = UnitConvertor.MilesTokm(miles);
         //double res3 = UnitConvertor.MetersToFeet(meters);
         //double res4 = UnitConvertor.FeetTometers(feet);
+
         //Console.WriteLine("Convert KmToMiles " + res1);
         //Console.WriteLine("Convert MilesTokm " + res2);
         //Console.WriteLine("Convert MetersToFeet " + res3);
@@ -78,24 +79,51 @@ class Program
 
 
         // Problem 5 
-        Console.WriteLine("Enter the yards, feet, meter, inches: ");
-        double yards = Convert.ToDouble(Console.ReadLine());
-        double feet = Convert.ToDouble(Console.ReadLine());
-        double meters = Convert.ToDouble(Console.ReadLine());
-        double inches = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter the yards, feet, meter, inches: ");
+        //double yards = Convert.ToDouble(Console.ReadLine());
+        //double feet = Convert.ToDouble(Console.ReadLine());
+        //double meters = Convert.ToDouble(Console.ReadLine());
+        //double inches = Convert.ToDouble(Console.ReadLine());
 
-        NonStaticUnitConvertor ns = new NonStaticUnitConvertor();
-        double res1 = ns.ConvertYardsToFeet(yards);
-        double res2 = ns.ConvertFeetToYards(feet);
-        double res3 = ns.ConvertMetersToInches(meters);
-        double res4 = ns.ConvertInchesToMeter(inches);
-        double res5 = ns.ConvertInchesCentiMeters(inches);
+        //NonStaticUnitConvertor ns = new NonStaticUnitConvertor();
+        //double res1 = ns.ConvertYardsToFeet(yards);
+        //double res2 = ns.ConvertFeetToYards(feet);
+        //double res3 = ns.ConvertMetersToInches(meters);
+        //double res4 = ns.ConvertInchesToMeter(inches);
+        //double res5 = ns.ConvertInchesCentiMeters(inches);
 
-        Console.WriteLine("Convert yards2feet " + res1);
-        Console.WriteLine("Convert feet2yards " + res2);
-        Console.WriteLine("Convert meters2inches " + res3);
-        Console.WriteLine("Convert inches2meters " + res4);
-        Console.WriteLine("Convert inches2cm " + res5);
+        //Console.WriteLine("Convert yards2feet " + res1);
+        //Console.WriteLine("Convert feet2yards " + res2);
+        //Console.WriteLine("Convert meters2inches " + res3);
+        //Console.WriteLine("Convert inches2meters " + res4);
+        //Console.WriteLine("Convert inches2cm " + res5);
+
+
+
+        // Problem 6 Unit Convertor Static Method
+        Console.WriteLine("Enter Farhen, Celsius, Pounds, Kg, Gallons, Liters");
+        double farhen = Convert.ToDouble(Console.ReadLine());
+        double celsius = Convert.ToDouble(Console.ReadLine());
+        double pounds = Convert.ToDouble(Console.ReadLine());
+        double kg = Convert.ToDouble(Console.ReadLine());
+        double gallons = Convert.ToDouble(Console.ReadLine());
+        double liters = Convert.ToDouble(Console.ReadLine());
+
+
+        double res1 = StaticMethodUnitConvertor.convertFarhenheitToCelsius(farhen);
+        double res2 = StaticMethodUnitConvertor.convertCelsiusToFarhenheit(celsius);
+        double res3 = StaticMethodUnitConvertor.convertPoundsToKg(pounds);
+        double res4 = StaticMethodUnitConvertor.convertKgToPounds(kg);
+        double res5 = StaticMethodUnitConvertor.convertGallonsToLiters(gallons);
+        double res6 = StaticMethodUnitConvertor.convertLitersToGallons(liters);
+
+        Console.WriteLine("Convert convert Farhenheit To Celsius " + res1);
+        Console.WriteLine("Convert convert Celsius To Farhenheit " + res2);
+        Console.WriteLine("Convert convert Pounds To Kg " + res3);
+        Console.WriteLine("Convert convert Kg To Pounds " + res4);
+        Console.WriteLine("Convert convert Gallons To Liters " + res5);
+        Console.WriteLine("Convert convert Liters To Gallons " + res6);
+
 
 
 
