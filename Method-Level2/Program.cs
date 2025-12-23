@@ -61,20 +61,43 @@ class Program
 
 
         // Problem 4 Unit Convertor
-        Console.WriteLine("Enter the km, miles, meter, feet");
-        double km = Convert.ToDouble(Console.ReadLine());
-        double miles = Convert.ToDouble(Console.ReadLine());
-        double meters = Convert.ToDouble(Console.ReadLine());
-        double feet = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter the km, miles, meter, feet");
+        //double km = Convert.ToDouble(Console.ReadLine());
+        //double miles = Convert.ToDouble(Console.ReadLine());
+        //double meters = Convert.ToDouble(Console.ReadLine());
+        //double feet = Convert.ToDouble(Console.ReadLine());
 
-        double res1 = UnitConvertor.KmToMiles(km);
-        double res2 = UnitConvertor.MilesTokm(miles);
-        double res3 = UnitConvertor.MetersToFeet(meters);
-        double res4 = UnitConvertor.FeetTometers(feet);
-        Console.WriteLine("Convert KmToMiles " + res1);
-        Console.WriteLine("Convert MilesTokm " + res2);
-        Console.WriteLine("Convert MetersToFeet " + res3);
-        Console.WriteLine("Convert FeetTometers " + res4);
+        //double res1 = UnitConvertor.KmToMiles(km);
+        //double res2 = UnitConvertor.MilesTokm(miles);
+        //double res3 = UnitConvertor.MetersToFeet(meters);
+        //double res4 = UnitConvertor.FeetTometers(feet);
+        //Console.WriteLine("Convert KmToMiles " + res1);
+        //Console.WriteLine("Convert MilesTokm " + res2);
+        //Console.WriteLine("Convert MetersToFeet " + res3);
+        //Console.WriteLine("Convert FeetTometers " + res4);
+
+
+        // Problem 5 
+        Console.WriteLine("Enter the yards, feet, meter, inches: ");
+        double yards = Convert.ToDouble(Console.ReadLine());
+        double feet = Convert.ToDouble(Console.ReadLine());
+        double meters = Convert.ToDouble(Console.ReadLine());
+        double inches = Convert.ToDouble(Console.ReadLine());
+
+        NonStaticUnitConvertor ns = new NonStaticUnitConvertor();
+        double res1 = ns.ConvertYardsToFeet(yards);
+        double res2 = ns.ConvertFeetToYards(feet);
+        double res3 = ns.ConvertMetersToInches(meters);
+        double res4 = ns.ConvertInchesToMeter(inches);
+        double res5 = ns.ConvertInchesCentiMeters(inches);
+
+        Console.WriteLine("Convert yards2feet " + res1);
+        Console.WriteLine("Convert feet2yards " + res2);
+        Console.WriteLine("Convert meters2inches " + res3);
+        Console.WriteLine("Convert inches2meters " + res4);
+        Console.WriteLine("Convert inches2cm " + res5);
+
+
 
         Console.ReadKey();
     }
