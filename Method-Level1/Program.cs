@@ -133,18 +133,27 @@ class Program
 
 
         //Problem 11 Wind Chill Temperature
-        Console.WriteLine("Enter temperature and speed:");
-        double temperature = Convert.ToDouble(Console.ReadLine());
-        double windSpeed = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter temperature and speed:");
+        //double temperature = Convert.ToDouble(Console.ReadLine());
+        //double windSpeed = Convert.ToDouble(Console.ReadLine());
 
-        WindChillTemprature wd = new WindChillTemprature();
-        double result = wd.CalculateWindChill(temperature, windSpeed);
+        //WindChillTemprature wd = new WindChillTemprature();
+        //double result = wd.CalculateWindChill(temperature, windSpeed);
 
-        Console.WriteLine($"The wind chill temperature is {result}");
-
-
+        //Console.WriteLine($"The wind chill temperature is {result}");
 
 
+
+        // Problem 12 Trigonometric Functions
+        Console.WriteLine("Enter angle in degrees:");
+        double angle = Convert.ToDouble(Console.ReadLine());
+
+        TrigonometricFunc tg = new TrigonometricFunc();
+        double[] result = tg.calculateTrigonometricFunctions(angle);
+
+        Console.WriteLine($"Sine of {angle}° = {result[0]}");
+        Console.WriteLine($"Cosine of {angle}° = {result[1]}");
+        Console.WriteLine($"Tangent of {angle}° = {result[2]}");
 
         Console.ReadKey();
     }
