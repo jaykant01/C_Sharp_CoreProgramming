@@ -242,8 +242,16 @@ class Program
 
 
         // Problem 11 Quadratic Roots
-        QuadraticRoots qd = new QuadraticRoots();
-        qd.Roots();
+        //QuadraticRoots qd = new QuadraticRoots();
+        //qd.Roots();
+
+
+
+        // Problem 12 Random Number Generator
+        int size = Convert.ToInt32(Console.ReadLine());
+        RandomNumGenerator rd = new RandomNumGenerator();
+        int[] numbers = rd.Generate4DigitRandomArray(size);
+        rd.FindAverageMinMax(numbers);
 
         Console.ReadKey();
     }

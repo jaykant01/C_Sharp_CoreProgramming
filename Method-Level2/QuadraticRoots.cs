@@ -1,5 +1,7 @@
 ﻿namespace Method_Level2;
-
+/* Write a program Quadratic to find the roots of the equation ax2+ bx + c. Use Math
+functions Math.pow() and Math.sqrt()
+ */
 public class QuadraticRoots
 {
     public void Roots()
