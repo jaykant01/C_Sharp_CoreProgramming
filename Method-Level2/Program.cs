@@ -151,29 +151,69 @@ class Program
 
 
         // Problem 8 Friend Analyzer
-        string[] friends = { "Amar", "Akbar", "Anthony" };
+        //string[] friends = { "Amar", "Akbar", "Anthony" };
 
-        int[] ages = new int[3];
-        double[] heights = new double[3];
+        //int[] ages = new int[3];
+        //double[] heights = new double[3];
 
-        // Taking input
-        for (int i = 0; i < friends.Length; i++)
+        //// Taking input
+        //for (int i = 0; i < friends.Length; i++)
+        //{
+        //    Console.Write($"Enter age of {friends[i]}: ");
+        //    ages[i] = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.Write($"Enter height of {friends[i]} (in cm): ");
+        //    heights[i] = Convert.ToDouble(Console.ReadLine());
+        //}
+
+        //FriendAnalyzer analyzer = new FriendAnalyzer();
+
+        //int youngestIndex = analyzer.FindYoungestIndex(ages);
+        //int tallestIndex = analyzer.FindTallestIndex(heights);
+
+        //// Display results
+        //Console.WriteLine($"\nYoungest Friend: {friends[youngestIndex]}");
+        //Console.WriteLine($"Tallest Friend: {friends[tallestIndex]}");
+
+        
+
+
+        // Problem 9 
+        Console.WriteLine("Enter size of an array");
+        int n = Convert.ToInt32 (Console.ReadLine());
+
+        CompareNumber cp = new CompareNumber();
+
+        int[] arr = new int[n];
+        for(int i=0; i < arr.Length; i++)
         {
-            Console.Write($"Enter age of {friends[i]}: ");
-            ages[i] = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write($"Enter height of {friends[i]} (in cm): ");
-            heights[i] = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Enter the index {i+1} value in array: ");
+            arr[i] = Convert.ToInt32 (Console.ReadLine());
+            if (cp.CheckPostiveAndNegative(arr[i]))
+            {
+                cp.EvenAndOdd(arr[i]);
+            }
+            else
+            {
+                Console.WriteLine("The Number is Negative");
+                
+            }
         }
 
-        FriendAnalyzer analyzer = new FriendAnalyzer();
+        int res = cp.CompareTwoNumbers(arr[0], arr[arr.Length-1]);
+        if(res == 0)
+        {
+            Console.WriteLine("Equal");
+        }else if(res == 1)
+        {
+            Console.WriteLine($"Number {arr[0]} is greater");
+        }
+        else
+        {
+            Console.WriteLine($"Number {arr[0]} is Lesser");
+        }
 
-        int youngestIndex = analyzer.FindYoungestIndex(ages);
-        int tallestIndex = analyzer.FindTallestIndex(heights);
 
-        // Display results
-        Console.WriteLine($"\nYoungest Friend: {friends[youngestIndex]}");
-        Console.WriteLine($"Tallest Friend: {friends[tallestIndex]}");
 
         Console.ReadKey();
     }
