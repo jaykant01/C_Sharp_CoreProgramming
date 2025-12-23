@@ -216,29 +216,34 @@ class Program
 
 
         // Problem 10 BMI Calculatordouble
-        double[,] data = new double[10, 3];
-        string[] status;
+        //double[,] data = new double[10, 3];
+        //string[] status;
 
-        BMICalculator b = new BMICalculator();
+        //BMICalculator b = new BMICalculator();
 
 
-        for (int i=0; i<10; i++)
-        {
-            Console.WriteLine($"Enter details for Person {i + 1} Weight & Height");
-            data[i, 0] = Convert.ToDouble(Console.ReadLine());
-            data[i, 1] = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine();
-        }
+        //for (int i=0; i<10; i++)
+        //{
+        //    Console.WriteLine($"Enter details for Person {i + 1} Weight & Height");
+        //    data[i, 0] = Convert.ToDouble(Console.ReadLine());
+        //    data[i, 1] = Convert.ToDouble(Console.ReadLine());
+        //    Console.WriteLine();
+        //}
 
-        b.Calculator(data);
-        status = b.GetBMIStatus(data);
+        //b.Calculator(data);
+        //status = b.GetBMIStatus(data);
 
-        for (int i = 0; i < 10; i++)
-        {
-            Console.WriteLine(
-                $"{i + 1}\t{data[i, 0]}\t{data[i, 1]}\t{data[i, 2]:0.00}\t{status[i]}"
-            );
-        }
+        //for (int i = 0; i < 10; i++)
+        //{
+        //    Console.WriteLine(
+        //        $"{i + 1}\t{data[i, 0]}\t{data[i, 1]}\t{data[i, 2]:0.00}\t{status[i]}"
+        //    );
+        //}
+
+
+        // Problem 11 Quadratic Roots
+        QuadraticRoots qd = new QuadraticRoots();
+        qd.Roots();
 
         Console.ReadKey();
     }
