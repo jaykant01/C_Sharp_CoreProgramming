@@ -175,45 +175,70 @@ class Program
         //Console.WriteLine($"\nYoungest Friend: {friends[youngestIndex]}");
         //Console.WriteLine($"Tallest Friend: {friends[tallestIndex]}");
 
-        
+
 
 
         // Problem 9 
-        Console.WriteLine("Enter size of an array");
-        int n = Convert.ToInt32 (Console.ReadLine());
+        //Console.WriteLine("Enter size of an array");
+        //int n = Convert.ToInt32 (Console.ReadLine());
 
-        CompareNumber cp = new CompareNumber();
+        //CompareNumber cp = new CompareNumber();
 
-        int[] arr = new int[n];
-        for(int i=0; i < arr.Length; i++)
+        //int[] arr = new int[n];
+        //for(int i=0; i < arr.Length; i++)
+        //{
+        //    Console.WriteLine($"Enter the index {i+1} value in array: ");
+        //    arr[i] = Convert.ToInt32 (Console.ReadLine());
+        //    if (cp.CheckPostiveAndNegative(arr[i]))
+        //    {
+        //        cp.EvenAndOdd(arr[i]);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("The Number is Negative");
+
+        //    }
+        //}
+
+        //int res = cp.CompareTwoNumbers(arr[0], arr[arr.Length-1]);
+        //if(res == 0)
+        //{
+        //    Console.WriteLine("Equal");
+        //}else if(res == 1)
+        //{
+        //    Console.WriteLine($"Number {arr[0]} is greater");
+        //}
+        //else
+        //{
+        //    Console.WriteLine($"Number {arr[0]} is Lesser");
+        //}
+
+
+
+        // Problem 10 BMI Calculatordouble
+        double[,] data = new double[10, 3];
+        string[] status;
+
+        BMICalculator b = new BMICalculator();
+
+
+        for (int i=0; i<10; i++)
         {
-            Console.WriteLine($"Enter the index {i+1} value in array: ");
-            arr[i] = Convert.ToInt32 (Console.ReadLine());
-            if (cp.CheckPostiveAndNegative(arr[i]))
-            {
-                cp.EvenAndOdd(arr[i]);
-            }
-            else
-            {
-                Console.WriteLine("The Number is Negative");
-                
-            }
+            Console.WriteLine($"Enter details for Person {i + 1} Weight & Height");
+            data[i, 0] = Convert.ToDouble(Console.ReadLine());
+            data[i, 1] = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
         }
 
-        int res = cp.CompareTwoNumbers(arr[0], arr[arr.Length-1]);
-        if(res == 0)
-        {
-            Console.WriteLine("Equal");
-        }else if(res == 1)
-        {
-            Console.WriteLine($"Number {arr[0]} is greater");
-        }
-        else
-        {
-            Console.WriteLine($"Number {arr[0]} is Lesser");
-        }
+        b.Calculator(data);
+        status = b.GetBMIStatus(data);
 
-
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine(
+                $"{i + 1}\t{data[i, 0]}\t{data[i, 1]}\t{data[i, 2]:0.00}\t{status[i]}"
+            );
+        }
 
         Console.ReadKey();
     }
