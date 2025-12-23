@@ -100,16 +100,38 @@ class Program
 
 
         // Problem 9 quotient and reminder
-        Console.WriteLine("Enter the first and second number:");
-        int number = Convert.ToInt32(Console.ReadLine());
-        int divisor = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter the first and second number:");
+        //int number = Convert.ToInt32(Console.ReadLine());
+        //int divisor = Convert.ToInt32(Console.ReadLine());
 
-        ReaminderAndQuotient rq = new ReaminderAndQuotient();
-        int[] result = rq.FindRemainderAndQuotient(number, divisor);
+        //ReaminderAndQuotient rq = new ReaminderAndQuotient();
+        //int[] result = rq.FindRemainderAndQuotient(number, divisor);
+
+        //Console.WriteLine(
+        //    $"The Quotient is {result[0]} and Remainder is {result[1]} of two numbers {number} and {divisor}"
+        //);
+
+
+
+
+        //Problem 10 Chocolates Distribution
+        Console.WriteLine("Enter number of chocolates and children:");
+        int numberOfChocolates = Convert.ToInt32(Console.ReadLine());
+        int numberOfChildren = Convert.ToInt32(Console.ReadLine());
+
+        Chocolates ck = new Chocolates();
+
+        int[] result = ck.FindRemainderAndQuotient(
+            numberOfChocolates, numberOfChildren);
 
         Console.WriteLine(
-            $"The Quotient is {result[0]} and Remainder is {result[1]} of two numbers {number} and {divisor}"
+            $"Each child gets {result[0]} chocolates and remaining chocolates are {result[1]}"
         );
+
+
+
+
+
 
         Console.ReadKey();
     }
