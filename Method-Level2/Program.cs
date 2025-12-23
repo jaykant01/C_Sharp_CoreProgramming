@@ -101,32 +101,53 @@ class Program
 
 
         // Problem 6 Unit Convertor Static Method
-        Console.WriteLine("Enter Farhen, Celsius, Pounds, Kg, Gallons, Liters");
-        double farhen = Convert.ToDouble(Console.ReadLine());
-        double celsius = Convert.ToDouble(Console.ReadLine());
-        double pounds = Convert.ToDouble(Console.ReadLine());
-        double kg = Convert.ToDouble(Console.ReadLine());
-        double gallons = Convert.ToDouble(Console.ReadLine());
-        double liters = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("Enter Farhen, Celsius, Pounds, Kg, Gallons, Liters");
+        //double farhen = Convert.ToDouble(Console.ReadLine());
+        //double celsius = Convert.ToDouble(Console.ReadLine());
+        //double pounds = Convert.ToDouble(Console.ReadLine());
+        //double kg = Convert.ToDouble(Console.ReadLine());
+        //double gallons = Convert.ToDouble(Console.ReadLine());
+        //double liters = Convert.ToDouble(Console.ReadLine());
 
 
-        double res1 = StaticMethodUnitConvertor.convertFarhenheitToCelsius(farhen);
-        double res2 = StaticMethodUnitConvertor.convertCelsiusToFarhenheit(celsius);
-        double res3 = StaticMethodUnitConvertor.convertPoundsToKg(pounds);
-        double res4 = StaticMethodUnitConvertor.convertKgToPounds(kg);
-        double res5 = StaticMethodUnitConvertor.convertGallonsToLiters(gallons);
-        double res6 = StaticMethodUnitConvertor.convertLitersToGallons(liters);
+        //double res1 = StaticMethodUnitConvertor.convertFarhenheitToCelsius(farhen);
+        //double res2 = StaticMethodUnitConvertor.convertCelsiusToFarhenheit(celsius);
+        //double res3 = StaticMethodUnitConvertor.convertPoundsToKg(pounds);
+        //double res4 = StaticMethodUnitConvertor.convertKgToPounds(kg);
+        //double res5 = StaticMethodUnitConvertor.convertGallonsToLiters(gallons);
+        //double res6 = StaticMethodUnitConvertor.convertLitersToGallons(liters);
 
-        Console.WriteLine("Convert convert Farhenheit To Celsius " + res1);
-        Console.WriteLine("Convert convert Celsius To Farhenheit " + res2);
-        Console.WriteLine("Convert convert Pounds To Kg " + res3);
-        Console.WriteLine("Convert convert Kg To Pounds " + res4);
-        Console.WriteLine("Convert convert Gallons To Liters " + res5);
-        Console.WriteLine("Convert convert Liters To Gallons " + res6);
-
-
+        //Console.WriteLine("Convert convert Farhenheit To Celsius " + res1);
+        //Console.WriteLine("Convert convert Celsius To Farhenheit " + res2);
+        //Console.WriteLine("Convert convert Pounds To Kg " + res3);
+        //Console.WriteLine("Convert convert Kg To Pounds " + res4);
+        //Console.WriteLine("Convert convert Gallons To Liters " + res5);
+        //Console.WriteLine("Convert convert Liters To Gallons " + res6);
 
 
-        Console.ReadKey();
+
+        // Problem 7 StudentVoteChecker
+        int[] studentAges = new int[10];
+        StudentVoteChecker checker = new StudentVoteChecker();
+
+        for (int i = 0; i < studentAges.Length; i++)
+        {
+            Console.Write($"Enter age of student {i + 1}: ");
+            studentAges[i] = Convert.ToInt32(Console.ReadLine());
+
+            bool canVote = checker.CanStudentVote(studentAges[i]);
+
+            if (canVote)
+            {
+                Console.WriteLine("Student can vote");
+            }
+            else
+            {
+                Console.WriteLine("Student cannot vote");
+            }
+
+        }
+
+            Console.ReadKey();
     }
 }
