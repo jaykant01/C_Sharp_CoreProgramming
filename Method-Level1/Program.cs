@@ -87,15 +87,29 @@ class Program
 
 
         // Problem 8 Find Smallest And Largest
-        Console.WriteLine("Enter first, second & Third Number: ");
-        int num1 = Convert.ToInt32(Console.ReadLine());
-        int num2 = Convert.ToInt32(Console.ReadLine());
-        int num3 = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Enter first, second & Third Number: ");
+        //int num1 = Convert.ToInt32(Console.ReadLine());
+        //int num2 = Convert.ToInt32(Console.ReadLine());
+        //int num3 = Convert.ToInt32(Console.ReadLine());
 
 
-        int[] result = FindSmallestLargest.FindSmallestAndLargest(num1, num2, num3);
-        Console.WriteLine("Smallest number: " + result[0]);
-        Console.WriteLine("Largest number: " + result[1]);
+        //int[] result = FindSmallestLargest.FindSmallestAndLargest(num1, num2, num3);
+        //Console.WriteLine("Smallest number: " + result[0]);
+        //Console.WriteLine("Largest number: " + result[1]);
+
+
+
+        // Problem 9 quotient and reminder
+        Console.WriteLine("Enter the first and second number:");
+        int number = Convert.ToInt32(Console.ReadLine());
+        int divisor = Convert.ToInt32(Console.ReadLine());
+
+        ReaminderAndQuotient rq = new ReaminderAndQuotient();
+        int[] result = rq.FindRemainderAndQuotient(number, divisor);
+
+        Console.WriteLine(
+            $"The Quotient is {result[0]} and Remainder is {result[1]} of two numbers {number} and {divisor}"
+        );
 
         Console.ReadKey();
     }
