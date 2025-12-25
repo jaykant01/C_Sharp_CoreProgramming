@@ -43,22 +43,38 @@ class Program
 
 
         // Problem 4
-        int n = Convert.ToInt32(Console.ReadLine());
-        int res = NumberChecker2.CountDigit(n);
-        int[] res1 = NumberChecker2.StoreDigit(n);
-        bool res2 = NumberChecker2.Palindrome(n);
+        //int n = Convert.ToInt32(Console.ReadLine());
+        //int res = NumberChecker2.CountDigit(n);
+        //int[] res1 = NumberChecker2.StoreDigit(n);
+        //bool res2 = NumberChecker2.Palindrome(n);
 
-        Console.WriteLine("Count of digit is " + res);
+        //Console.WriteLine("Count of digit is " + res);
 
-        Console.Write("Digits: ");
-        foreach (int d in res1)
-        {
-            Console.Write(d + " ");
-        }
-        Console.WriteLine();
+        //Console.Write("Digits: ");
+        //foreach (int d in res1)
+        //{
+        //    Console.Write(d + " ");
+        //}
+        //Console.WriteLine();
 
-        Console.WriteLine("Plaindrome Number " + res2);
+        //Console.WriteLine("Plaindrome Number " + res2);
 
+
+
+        // Problem 5
+        int n = int.Parse(Console.ReadLine());
+
+        bool res = NumberChecker3.IsPrime(n);
+        bool res1 = NumberChecker3.IsNeon(n);
+        bool res2 = NumberChecker3.IsSpy(n);
+        bool res3 = NumberChecker3.IsAutomorphic(n);
+        bool res4 = NumberChecker3.IsBuzz(n);
+
+        Console.WriteLine(res ? "Prime Number" : "Not a Prime Number");
+        Console.WriteLine(res1 ? "Neon Number" : "Not a Neon Number");
+        Console.WriteLine(res2 ? "Spy Number" : "Not a Spy Number");
+        Console.WriteLine(res3 ? "Automorphic Number" : "Not an Automorphic Number");
+        Console.WriteLine(res4 ? "Buzz Number" : "Not a Buzz Number");
 
         Console.ReadKey();
     }
