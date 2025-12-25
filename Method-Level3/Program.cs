@@ -62,19 +62,38 @@ class Program
 
 
         // Problem 5
+        //int n = int.Parse(Console.ReadLine());
+
+        //bool res = NumberChecker3.IsPrime(n);
+        //bool res1 = NumberChecker3.IsNeon(n);
+        //bool res2 = NumberChecker3.IsSpy(n);
+        //bool res3 = NumberChecker3.IsAutomorphic(n);
+        //bool res4 = NumberChecker3.IsBuzz(n);
+
+        //Console.WriteLine(res ? "Prime Number" : "Not a Prime Number");
+        //Console.WriteLine(res1 ? "Neon Number" : "Not a Neon Number");
+        //Console.WriteLine(res2 ? "Spy Number" : "Not a Spy Number");
+        //Console.WriteLine(res3 ? "Automorphic Number" : "Not an Automorphic Number");
+        //Console.WriteLine(res4 ? "Buzz Number" : "Not a Buzz Number");
+
+
+
+        // Problem 6
         int n = int.Parse(Console.ReadLine());
 
-        bool res = NumberChecker3.IsPrime(n);
-        bool res1 = NumberChecker3.IsNeon(n);
-        bool res2 = NumberChecker3.IsSpy(n);
-        bool res3 = NumberChecker3.IsAutomorphic(n);
-        bool res4 = NumberChecker3.IsBuzz(n);
+        int[] factors = NumberChecker4.GetFactors(n);
 
-        Console.WriteLine(res ? "Prime Number" : "Not a Prime Number");
-        Console.WriteLine(res1 ? "Neon Number" : "Not a Neon Number");
-        Console.WriteLine(res2 ? "Spy Number" : "Not a Spy Number");
-        Console.WriteLine(res3 ? "Automorphic Number" : "Not an Automorphic Number");
-        Console.WriteLine(res4 ? "Buzz Number" : "Not a Buzz Number");
+        NumberChecker4.PrintGreatestFactor(factors);
+        NumberChecker4.PrintSumOfFactors(factors);
+        NumberChecker4.PrintProductOfFactors(factors);
+        NumberChecker4.PrintProductOfCubeOfFactors(factors);
+
+        NumberChecker4.PrintPerfect(n, factors);
+        NumberChecker4.PrintAbundant(n, factors);
+        NumberChecker4.PrintDeficient(n, factors);
+        NumberChecker4.PrintStrong(n);
+
+
 
         Console.ReadKey();
     }
