@@ -1,5 +1,8 @@
 ﻿namespace Method_Level3;
-
+/* Extend or Create a NumberChecker utility class and perform the following task. Call
+from the main() method the different methods and display results. Make sure all are static
+methods
+ */
 public class NumberChecker4
 {
     // Factors
