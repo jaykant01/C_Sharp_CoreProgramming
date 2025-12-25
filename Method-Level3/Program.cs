@@ -23,14 +23,23 @@ class Program
 
 
         // Problem 2
-        int n = Convert.ToInt32(Console.ReadLine());
-        NumberChecker nm = new NumberChecker();
-        Console.WriteLine("Count of digit is " + nm.CountDigit(n));
+        //int n = Convert.ToInt32(Console.ReadLine());
+        //NumberChecker nm = new NumberChecker();
+        //Console.WriteLine("Count of digit is " + nm.CountDigit(n));
 
-        Console.WriteLine("DuckNumber is " + nm.DuckNumber(n));
-        Console.WriteLine("Armstrong Number is " + nm.ArmstrongNumber(n));
-        nm.LargestNumber(n);
-        nm.SmallestNumber(n);
+        //Console.WriteLine("DuckNumber is " + nm.DuckNumber(n));
+        //Console.WriteLine("Armstrong Number is " + nm.ArmstrongNumber(n));
+        //nm.LargestNumber(n);
+        //nm.SmallestNumber(n);
+
+
+        // Problem 3
+        int n = Convert.ToInt32(Console.ReadLine());
+        NumberChecker1 n1 = new NumberChecker1();
+        Console.WriteLine("Count of digit is " + n1.CountDigit(n));
+        Console.WriteLine("Sum of digit is " + n1.SumNumber(n));
+        Console.WriteLine("Sum of Square is " + n1.SumSquare(n));
+        Console.WriteLine("Is it a Harshad Number " + n1.HarshadNumber(n));
 
 
 
