@@ -8,13 +8,14 @@ class Program
     {
 
         // Problem 1
-        CurrTimeInDiffTimeZones tz = new CurrTimeInDiffTimeZones();
-        tz.DisplayTimeZones();
+        //CurrTimeInDiffTimeZones tz = new CurrTimeInDiffTimeZones();
+        //tz.DisplayTimeZones();
 
-        //Console.WriteLine("Enter Date in this format dd-MM-yyyy ");
-        //string inputDate = Console.ReadLine();
-        //DateTime date = DateTime.ParseExact(inputDate);
-        //DateTime utc = 
+
+
+        // Problem 2
+        DateArithmetic dz = new DateArithmetic();
+        dz.CalculateDate();
 
         Console.ReadKey();
     }
