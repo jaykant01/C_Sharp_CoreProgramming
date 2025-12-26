@@ -95,20 +95,26 @@ class Program
 
 
         // Problem 7
-        int[] otps = GenerateOTP.GenerateOTPs();
+        //int[] otps = GenerateOTP.GenerateOTPs();
 
-        Console.WriteLine("Generated OTPs:");
-        foreach (int otp in otps)
-        {
-            Console.WriteLine(otp);
-        }
+        //Console.WriteLine("Generated OTPs:");
+        //foreach (int otp in otps)
+        //{
+        //    Console.WriteLine(otp);
+        //}
 
-        bool result = GenerateOTP.AreOTPsUnique(otps);
+        //bool result = GenerateOTP.AreOTPsUnique(otps);
 
-        Console.WriteLine(result? "All OTPs are unique": "Duplicate OTPs found");
-    
+        //Console.WriteLine(result? "All OTPs are unique": "Duplicate OTPs found");
 
 
-    Console.ReadKey();
+
+        // Problem 11
+        double[,] oldData = ZaraBonus.GenerateEmployeeData();
+        double[,] newData = ZaraBonus.CalculateBonus(oldData);
+
+        ZaraBonus.DisplayReport(oldData, newData);
+
+        Console.ReadKey();
     }
 }
