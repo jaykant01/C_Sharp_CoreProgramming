@@ -60,8 +60,13 @@ class Program
 
 
         // Problem 8
-        TemperatureConverter converter = new TemperatureConverter();
-        converter.Run();
+        //TemperatureConverter converter = new TemperatureConverter();
+        //converter.Run();
+
+
+        // Problem 9
+        Calculator calc = new Calculator();
+        calc.Run();
 
         Console.ReadKey();
     }
