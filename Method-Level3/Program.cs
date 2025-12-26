@@ -79,22 +79,36 @@ class Program
 
 
         // Problem 6
-        int n = int.Parse(Console.ReadLine());
+        //int n = int.Parse(Console.ReadLine());
 
-        int[] factors = NumberChecker4.GetFactors(n);
+        //int[] factors = NumberChecker4.GetFactors(n);
 
-        NumberChecker4.PrintGreatestFactor(factors);
-        NumberChecker4.PrintSumOfFactors(factors);
-        NumberChecker4.PrintProductOfFactors(factors);
-        NumberChecker4.PrintProductOfCubeOfFactors(factors);
+        //NumberChecker4.PrintGreatestFactor(factors);
+        //NumberChecker4.PrintSumOfFactors(factors);
+        //NumberChecker4.PrintProductOfFactors(factors);
+        //NumberChecker4.PrintProductOfCubeOfFactors(factors);
 
-        NumberChecker4.PrintPerfect(n, factors);
-        NumberChecker4.PrintAbundant(n, factors);
-        NumberChecker4.PrintDeficient(n, factors);
-        NumberChecker4.PrintStrong(n);
+        //NumberChecker4.PrintPerfect(n, factors);
+        //NumberChecker4.PrintAbundant(n, factors);
+        //NumberChecker4.PrintDeficient(n, factors);
+        //NumberChecker4.PrintStrong(n);
 
 
+        // Problem 7
+        int[] otps = GenerateOTP.GenerateOTPs();
 
-        Console.ReadKey();
+        Console.WriteLine("Generated OTPs:");
+        foreach (int otp in otps)
+        {
+            Console.WriteLine(otp);
+        }
+
+        bool result = GenerateOTP.AreOTPsUnique(otps);
+
+        Console.WriteLine(result? "All OTPs are unique": "Duplicate OTPs found");
+    
+
+
+    Console.ReadKey();
     }
 }
