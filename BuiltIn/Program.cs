@@ -1,4 +1,6 @@
-﻿namespace BuiltIn;
+﻿using System.Security.AccessControl;
+
+namespace BuiltIn;
 
 class Program
 {
@@ -42,8 +44,13 @@ class Program
 
 
         // Problem 5
-        PalindromeChecker checker = new PalindromeChecker();
-        checker.Run();
+        //PalindromeChecker checker = new PalindromeChecker();
+        //checker.Run();
+
+
+        // Problem 6
+        FactorialRecursion fact = new FactorialRecursion();
+        fact.Run();
 
         Console.ReadKey();
     }
