@@ -14,8 +14,14 @@ class Program
 
 
         // Problem 2
-        DateArithmetic dz = new DateArithmetic();
-        dz.CalculateDate();
+        //DateArithmetic dz = new DateArithmetic();
+        //dz.CalculateDate();
+
+
+
+        // Problem 3
+        DateFormatter df = new DateFormatter();
+        df.DisplayFormats();
 
         Console.ReadKey();
     }
