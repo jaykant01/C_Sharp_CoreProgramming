@@ -110,10 +110,18 @@ class Program
 
 
         // Problem 11
-        double[,] oldData = ZaraBonus.GenerateEmployeeData();
-        double[,] newData = ZaraBonus.CalculateBonus(oldData);
+        //double[,] oldData = ZaraBonus.GenerateEmployeeData();
+        //double[,] newData = ZaraBonus.CalculateBonus(oldData);
+        //ZaraBonus.DisplayReport(oldData, newData);
 
-        ZaraBonus.DisplayReport(oldData, newData);
+
+        // Problem 12
+        int students = int.Parse(Console.ReadLine());
+
+        double[,] marks = StudentMarks.GeneratePCMMarks(students);
+        double[,] result = StudentMarks.CalculateResults(marks);
+
+        StudentMarks.DisplayScoreCard(marks, result);
 
         Console.ReadKey();
     }
