@@ -107,6 +107,11 @@ class Program
 
         //Console.WriteLine(result? "All OTPs are unique": "Duplicate OTPs found");
 
+        // Problem 8
+        int month = int.Parse(Console.ReadLine());
+        int year = int.Parse(Console.ReadLine());
+
+        CalendarUtil.DisplayCalendar(month, year);
 
 
         // Problem 11
@@ -116,12 +121,14 @@ class Program
 
 
         // Problem 12
-        int students = int.Parse(Console.ReadLine());
+        //int students = int.Parse(Console.ReadLine());
 
-        double[,] marks = StudentMarks.GeneratePCMMarks(students);
-        double[,] result = StudentMarks.CalculateResults(marks);
+        //double[,] marks = StudentMarks.GeneratePCMMarks(students);
+        //double[,] result = StudentMarks.CalculateResults(marks);
 
-        StudentMarks.DisplayScoreCard(marks, result);
+        //StudentMarks.DisplayScoreCard(marks, result);
+
+
 
         Console.ReadKey();
     }
