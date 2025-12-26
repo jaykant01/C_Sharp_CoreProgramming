@@ -108,10 +108,23 @@ class Program
         //Console.WriteLine(result? "All OTPs are unique": "Duplicate OTPs found");
 
         // Problem 8
-        int month = int.Parse(Console.ReadLine());
-        int year = int.Parse(Console.ReadLine());
+        //int month = int.Parse(Console.ReadLine());
+        //int year = int.Parse(Console.ReadLine());
 
-        CalendarUtil.DisplayCalendar(month, year);
+        //CalendarUtil.DisplayCalendar(month, year);
+
+
+        // Problem 10
+        double x1 = double.Parse(Console.ReadLine());
+        double y1 = double.Parse(Console.ReadLine());
+        double x2 = double.Parse(Console.ReadLine());
+        double y2 = double.Parse(Console.ReadLine());
+
+        double distance = GeometryUtil.FindDistance(x1, y1, x2, y2);
+        double[] line = GeometryUtil.FindLineEquation(x1, y1, x2, y2);
+
+        Console.WriteLine("Euclidean Distance = " + distance);
+        Console.WriteLine("Equation of Line: y = " + line[0] + "x + " + line[1]);
 
 
         // Problem 11
