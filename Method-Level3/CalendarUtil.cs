@@ -1,5 +1,8 @@
 ﻿namespace Method_Level3;
-
+/* Create a program to display a calendar for a given month and year. The program
+should take the month and year as input from the user and display the calendar for that
+month. E.g. for 07 2005 user input, the program should display the calendar as shown below
+ */
 public class CalendarUtil
 {
     public static string GetMonthName(int month)
