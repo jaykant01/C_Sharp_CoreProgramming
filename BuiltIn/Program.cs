@@ -15,8 +15,21 @@ class Program
 
 
         // Problem 2
-        MaxThreeNumbers mx = new MaxThreeNumbers();
-        mx.FindMaximum();
+        //MaxThreeNumbers mx = new MaxThreeNumbers();
+        //mx.FindMaximum();
+
+
+        // Problem 3
+        Console.Write("Enter a number: ");
+        int number = int.Parse(Console.ReadLine());
+
+        PrimeNumber checker = new PrimeNumber();
+        bool isPrime = checker.CheckPrime(number);
+
+        if (isPrime)
+            Console.WriteLine("The number is Prime.");
+        else
+            Console.WriteLine("The number is NOT Prime.");
 
         Console.ReadKey();
     }
