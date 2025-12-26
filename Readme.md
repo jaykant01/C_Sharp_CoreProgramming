@@ -32,10 +32,10 @@ This branch contains hands-on writing my first code in **C#**.
 
 **Topics Covered:**
 - Console.WriteLine  
-- Console.ReadLine 
+- Console.ReadLine  
 
 **Purpose:**  
-To understand how first programm can be written and how to stop the console in C# to see our output.
+To understand how the first program can be written and how to stop the console in C# to view the output.
 
 ---
 
@@ -68,21 +68,91 @@ This branch is dedicated to **control flow concepts** in C#.
   - loops  
   - switch statements  
 
-- #### 📂 Problem-Set-1
-  - Control-flow–based practice questions  
-  - Realistic problem statements using conditions and loops  
+#### 📂 Problem-Set-1
+- Control-flow based practice questions  
+- Realistic problem statements using conditions and loops  
 
 **Purpose:**  
 To understand how **program execution flows** based on conditions and iterations.
 
 ---
 
+### 🔹 `arrays` Branch
+
+This branch covers **array concepts and operations**.
+
+**Contents:**
+- 1D & Multi-dimensional arrays  
+- Iteration & manipulation  
+- Search and sorting logic  
+- Concept-based problem programs  
+
+**Purpose:**  
+To understand how to store, traverse and process multiple values in C#.  
+
+---
+
+### 🔹 `strings` Branch
+
+This branch focuses on **string manipulation and operations**.
+
+**Contents:**
+- String methods & functions  
+- Character-level handling  
+- Real-time pattern/text problems  
+
+**Purpose:**  
+To handle **text-based data effectively** using string utilities.
+
+---
+
+### 🔹 `methods` Branch
+
+This branch is dedicated to **creating and using methods**.
+
+**Contents:**
+- Method declaration and execution  
+- Parameters and return types  
+- Method overloading  
+- Problem practice on modular coding  
+
+**Purpose:**  
+To learn writing **reusable, clean, and modular functions**.
+
+---
+
+### 🔹 `builtinfunctions` Branch
+
+This branch focuses on **built-in functions in C#**.
+
+**Contents:**
+- Math helper functions  
+- Date and Time  
+- String functions  
+- Frequently used in-built utilities  
+
+**Purpose:**  
+To use **predefined functionalities efficiently** instead of reinventing logic.
+
+---
+
+### 🔹 `review` Branch
+
+This branch is specifically created for **exam and interview questions**.
+
+**Contents:**
+- asked interview questions  
+- Exam-oriented small logical programs  
+- Combination of learned topics practiced together  
+
+---
+
 ## ✨ Features
 
 - Branch-wise learning approach  
-- Level-based practice structure  
-- Focus on logic building and core concepts  
-- Beginner-friendly and well-organized code  
+- Level-based problem practice  
+- Strong focus on fundamentals  
+- Beginner-friendly and organized structure  
 
 ---
 
@@ -91,4 +161,4 @@ To understand how **program execution flows** based on conditions and iterations
 **Jaykant Yadav**  
 B.Tech | Aspiring .NET Developer  
 
-Focused on **C# Core Programming**, **problem-solving**, and building **strong programming fundamentals**.
+Focused on **C# Core Programming**, **problem-solving**, and building **solid coding fundamentals**.
