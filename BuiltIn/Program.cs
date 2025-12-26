@@ -34,11 +34,16 @@ class Program
 
 
         // Problem 4
-        Console.Write("Enter number of terms: ");
-        int terms = int.Parse(Console.ReadLine());
+        //Console.Write("Enter number of terms: ");
+        //int terms = int.Parse(Console.ReadLine());
 
-        FibonacciSequence fib = new FibonacciSequence();
-        fib.GenerateFibonacci(terms);
+        //FibonacciSequence fib = new FibonacciSequence();
+        //fib.GenerateFibonacci(terms);
+
+
+        // Problem 5
+        PalindromeChecker checker = new PalindromeChecker();
+        checker.Run();
 
         Console.ReadKey();
     }
