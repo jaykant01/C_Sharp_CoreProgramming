@@ -55,8 +55,13 @@ class Program
 
 
         // Problem 7
-        GcdLcmCalculator calculator = new GcdLcmCalculator();
-        calculator.Run();
+        //GcdLcmCalculator calculator = new GcdLcmCalculator();
+        //calculator.Run();
+
+
+        // Problem 8
+        TemperatureConverter converter = new TemperatureConverter();
+        converter.Run();
 
         Console.ReadKey();
     }
