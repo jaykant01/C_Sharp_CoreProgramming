@@ -49,8 +49,14 @@ class Program
 
 
         // Problem 6
-        FactorialRecursion fact = new FactorialRecursion();
-        fact.Run();
+        //FactorialRecursion fact = new FactorialRecursion();
+        //fact.Run();
+
+
+
+        // Problem 7
+        GcdLcmCalculator calculator = new GcdLcmCalculator();
+        calculator.Run();
 
         Console.ReadKey();
     }
