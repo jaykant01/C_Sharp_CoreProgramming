@@ -20,16 +20,25 @@ class Program
 
 
         // Problem 3
-        Console.Write("Enter a number: ");
-        int number = int.Parse(Console.ReadLine());
+        //Console.Write("Enter a number: ");
+        //int number = int.Parse(Console.ReadLine());
 
-        PrimeNumber checker = new PrimeNumber();
-        bool isPrime = checker.CheckPrime(number);
+        //PrimeNumber checker = new PrimeNumber();
+        //bool isPrime = checker.CheckPrime(number);
 
-        if (isPrime)
-            Console.WriteLine("The number is Prime.");
-        else
-            Console.WriteLine("The number is NOT Prime.");
+        //if (isPrime)
+        //    Console.WriteLine("The number is Prime.");
+        //else
+        //    Console.WriteLine("The number is NOT Prime.");
+
+
+
+        // Problem 4
+        Console.Write("Enter number of terms: ");
+        int terms = int.Parse(Console.ReadLine());
+
+        FibonacciSequence fib = new FibonacciSequence();
+        fib.GenerateFibonacci(terms);
 
         Console.ReadKey();
     }
